@@ -12,5 +12,7 @@
   <p> <%#= image_tag portfolio_item.thumb_image %> </p>
 
 <%= link_to "Edit", edit_portfolio_path(portfolio_item.id) %>
+<td><%= link_to 'Destroy', portfolio_path(portfolio_item), method: :delete, data: { confirm: 'Are you sure?' } %></td>
 
 <% end %>
+
