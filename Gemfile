@@ -31,6 +31,10 @@ gem 'jbuilder', '~> 2.5'
 # gem 'mini_magick', '~> 4.8'
 gem 'friendly_id', '~> 5.1.0'
 
+gem 'bcrypt', '~> 3.1', '>= 3.1.12'
+
+gem 'pry', '~> 0.10.3'
+
 gem 'devise', '~> 4.2'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
