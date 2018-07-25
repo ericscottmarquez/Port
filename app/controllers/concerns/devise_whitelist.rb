@@ -15,3 +15,4 @@ module DeviseWhitelist
 
 
 end
+
