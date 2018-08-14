@@ -33,7 +33,9 @@ gem 'friendly_id', '~> 5.1.0'
 
 gem 'bcrypt', '~> 3.1', '>= 3.1.12'
 
-gem 'pry', '~> 0.10.3'
+gem 'bootstrap', '~> 4.0'
+
+gem 'jquery-rails', '~> 4.3', '>= 4.3.1'
 
 gem 'devise', '~> 4.2'
 # Use Capistrano for deployment
@@ -44,6 +46,7 @@ gem 'bootsnap', '>= 1.1.0', require: false
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
+  gem 'pry-byebug', '~> 3.4'
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
 end
 

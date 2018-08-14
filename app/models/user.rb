@@ -11,15 +11,11 @@ class User < ApplicationRecord
 
   def first_name
     self.name.split.first
-
   end
 
   def last_name
     self.name.split.last
-
-
   end
-
 
 end
 
