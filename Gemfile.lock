@@ -1,3 +1,9 @@
+GIT
+  remote: https://github.com/ericscottmarquez/coffee_view_tool
+  revision: 02200b34cab5d0da9225f0d3e7944466b3824d58
+  specs:
+    coffee_view_tool (0.1.0)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -206,6 +212,7 @@ DEPENDENCIES
   bootstrap (~> 4.0)
   byebug
   coffee-rails (~> 4.2)
+  coffee_view_tool!
   devise (~> 4.2)
   friendly_id (~> 5.1.0)
   jbuilder (~> 2.5)

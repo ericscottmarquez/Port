@@ -19,5 +19,10 @@ module ApplicationHelper
     
   end
 
+  def copyright_generator
+    @copyright = CoffeeViewTool::Renderer.copyright 'CoffeeCRM.io', 'All Rights Reserved'
+  end
+
+
 
 end
