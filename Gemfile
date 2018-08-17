@@ -33,6 +33,8 @@ gem 'friendly_id', '~> 5.1.0'
 
 gem 'bcrypt', '~> 3.1', '>= 3.1.12'
 
+gem 'petergate', '~> 1.6', '>= 1.6.3'
+
 gem 'bootstrap', '~> 4.0'
 
 gem 'jquery-rails', '~> 4.3', '>= 4.3.1'
