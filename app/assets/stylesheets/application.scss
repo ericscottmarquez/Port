@@ -17,8 +17,14 @@ a:hover {
 .btn-secondary:focus {
   color: #333;
   text-shadow: none; /* Prevent inheritance from `body` */
-  background-color: #fff;
-  border: .05rem solid #fff;
+  background-color: #ebc944;
+  border: .05rem solid #D3B53D;
+
+}
+
+.btn-secondary:hover {
+     color: #39ff14;
+     background-color: #3f704d;
 }
 
 
@@ -28,14 +34,16 @@ a:hover {
 
 html,
 body {
-  height: 100%;
-  background-color: #333;
+  height: 120%;
+  background-color: #0c374d;
 }
 body {
   color: #fff;
   text-align: center;
   text-shadow: 0 .05rem .1rem rgba(0,0,0,.5);
 }
+
+
 
 /* Extra markup and styles for table-esque vertical and horizontal centering */
 .site-wrapper {
@@ -160,3 +168,59 @@ body {
     width: 55rem;
   }
 }
+
+
+/*
+ * custom stylez
+ */
+
+
+
+
+.card-block {
+  color: black;
+  text-align: left;
+}
+
+
+.row md-padding {
+    padding: 20px;  
+}
+
+
+hr {
+
+    height: 2px;
+
+    background-color:#fff;
+
+    margin-top: 20px;
+
+    margin-bottom: 20px;
+
+    width: 75%;
+}
+
+.auth-links a {
+      color: #333;
+  text-shadow: none; /* Prevent inheritance from `body` */
+  background-color: #ebc944;
+  border: .05rem solid #D3B53D;
+}
+
+.register-text{
+  text-align: right;
+}
+
+
+
+
+.login > .card {
+  width: 22rem;
+  margin: 0 auto;
+  float: none;
+  margin-bottom: 10px;
+  margin-top: 50px;
+
+}
+
