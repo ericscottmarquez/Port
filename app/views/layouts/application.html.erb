@@ -1,6 +1,11 @@
 <!DOCTYPE html>
+
 <html>
+
+<div id="particles-js"></div>
+
   <head>
+
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
@@ -12,36 +17,53 @@
     <meta name="keywords" content="<%= @seo_keywords %>" />
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <%= stylesheet_link_tag    'particles', media: 'all', 'data-turbolinks-track': 'reload' %>
+
+    <%= javascript_include_tag 'application' %>
+    <%= javascript_include_tag 'particles.js' %>
+    <%= javascript_include_tag 'app.js' %>
+
+
   </head>
+  
+    
+    <body>
+
+    <div class="site-wrapper">
+      <div class="site-wrapper-inner">
+
+        
+
+        <div class="cover-container">
 
 
 
-<body>
-<div class="site-wrapper">
-  <div class="site-wrapper-inner">
-    <div class="cover-container">
+        <p class="notice"><%= notice %></p>
+        <p class="alert"><%= alert %></p>
 
-    <p class="notice"><%= notice %></p>
-    <p class="alert"><%= alert %></p>
-
-    <%= render "shared/application_nav" %>
-
-    <%= yield %>
-
-    <%= source_helper("application") %>
+        <%= render "shared/application_nav" %>
 
 
 
+                <%= yield %>
+
+
+        <%= source_helper("application") %>
+
+        </div>
+      </div>
     </div>
-  </div>
-</div>
-</body>
+
+
+    </body>
 
 
     <br>
     <%= render "shared/application_footer" %>
     
+
+
+
 </html>
 
 

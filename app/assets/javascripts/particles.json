@@ -1,0 +1,114 @@
+
+{
+
+  "particles": {
+    "fps_limit": 30,
+    "number": {
+      "value": 30,
+      "density": {
+        "enable": true,
+        "value_area": 900
+      }
+    },
+    "color": {
+      "value": "#fff"
+    },
+    "shape": {
+      "type": "circle",
+      "stroke": {
+        "width": 0,
+        "color": "#39ff14"
+      },
+      "polygon": {
+        "nb_sides": 10
+      },
+      "image": {
+        "src": "https://img.buzzfeed.com/buzzfeed-static/static/campaign_images/webdr06/2013/7/1/11/33-things-only-chef-gordon-ramsay-can-get-away-wi-1-8467-1372692562-0_big.jpg",
+        "width": 10,
+        "height": 10
+      }
+
+    },
+    "opacity": {
+      "value": 0.7,
+      "random": false,
+      "anim": {
+        "enable": false,
+        "speed": 2,
+        "opacity_min": 0.1,
+        "sync": false
+      }
+    },
+    "size": {
+      "value": 3,
+      "random": true,
+      "anim": {
+        "enable": false,
+        "speed": 60,
+        "size_min": 0.1,
+        "sync": false
+      }
+    },
+    "line_linked": {
+      "enable": true,
+      "distance": 550,
+      "color": "#39ff14",
+      "opacity": 0.2,
+      "width": 2
+    },
+    "move": {
+      "enable": true,
+      "speed": 8,
+      "direction": "none",
+      "random": true,
+      "straight": false,
+      "out_mode": "bounce",
+      "bounce": true,
+      "attract": {
+        "enable": false,
+        "rotateX": 90,
+        "rotateY": 120
+      }
+    }
+  },
+  "interactivity": {
+    "detect_on": "hover",
+    "events": {
+      "onhover": {
+        "enable": true,
+        "mode": "grab"
+      },
+      "onclick": {
+        "enable": false,
+        "mode": "pop"
+      },
+      "resize": true
+    },
+    "modes": {
+      "grab": {
+        "distance": 300,
+        "line_linked": {
+          "opacity": 0.3
+        }
+      },
+      "bubble": {
+        "distance": 1000,
+        "size": 10,
+        "duration": 2,
+        "opacity": 8,
+        "speed": 2
+      },
+      "repulse": {
+        "distance": 400,
+        "duration": 0.6
+      },
+      "push": {
+        "particles_nb": 4
+      },
+      "remove": {
+        "particles_nb": 2
+      }
+    }
+  },
+  "retina_detect": true
+}

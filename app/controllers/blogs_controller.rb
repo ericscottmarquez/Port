@@ -6,7 +6,8 @@ class BlogsController < ApplicationController
   # GET /blogs
   # GET /blogs.json
   def index
-    @blogs = Blog.special_blogs
+    @blogs = Blog.all
+    @blogs = Kaminari.paginate_array(@blogs).page(params[:page]).per(2)
     @page_title = "Portfolio Blog"
   end
 

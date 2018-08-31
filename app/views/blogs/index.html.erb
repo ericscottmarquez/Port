@@ -2,18 +2,17 @@
 
 <meta name="keywords" content="<%= @seo_keywords %>" />
 
-<div class="col-sm-7 blog-main">
+<div class="col-sm-6 blog-main">
   <%= render @blogs %>
-<nav class="blog-pagination">
-  <a class="btn btn-outline-primary" href="">Older</a>
-  <a class="btn btn-outline-primary disabled" href="">Newer</a>
+
+  <%= paginate @blogs %>
 
 </nav>
 </div>
 
 <br>
 
-<%= link_to 'New Blog', new_blog_path if logged_in?(:site_admin) %>
+    <%= link_to 'New Blog', new_blog_path if logged_in?(:site_admin) %>
 
 
 

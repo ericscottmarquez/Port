@@ -1,3 +1,5 @@
+
+<div class="col-sm-7">
 <p id="notice"><%= notice %></p>
 
 <p>
@@ -9,6 +11,10 @@
   <strong>Body:</strong>
   <%= @blog.body %>
 </p>
+</div>
 
-<%= link_to 'Edit', edit_blog_path(@blog) if logged_in?(:site_admin) %> |
+
+
+<%= link_to 'Edit', edit_blog_path(@blog) if logged_in?(:site_admin) %> 
+|
 <%= link_to 'Back', blogs_path %>
