@@ -1,23 +1,66 @@
+<br>
+<br>
+<br>
+<br>
+<div class="container">
+
+<div class="row">
+
+<div class="col">
+
+<header>
 
 
+<link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.min.css" rel="stylesheet">
 
 
+<% @icons = ['icon-reorder','icon-th-large','icon-bar-chart','icon-tasks','icon-bell','icon-archive','icon-comment','icon-sitemap','icon-thumbs-up','icon-tumblr'] %>
 
-<header class="masthead clearfix">
 
-  <div class="inner">
-    <h3 class="masthead-brand"> SYNTHESIS TECHNOLOGI ES </h3><br><p>a research and development firm</p>
+<ul>
 
-    <nav class="nav nav-masthead justify-content-center">
-      <%= link_to "Home", root_path, class: 'btn-outline-primary btn-sm' %>
-      <%= link_to "About", about_me_path, class: 'btn-outline-primary btn-sm' %>
-      <%= link_to "Contact", contact_path, class: 'btn-outline-primary btn-sm' %>
-      <%= link_to "Portfolio", portfolios_path, class: 'btn-outline-primary btn-sm' %>
-      <%= link_to "Blob", blogs_path, class: 'btn-outline-primary btn-sm' %>
-      <%= login_helper 'nav-link' 'btn btn-outline-primary btn-sm' %>
-      
-    </nav>
-  </div>
+
+    <li>
+      <%= link_to "Home", root_path, class: 'list-item' %>
+
+      <%= link_to "About", about_me_path, class: 'list-item' %>
+
+      <%= link_to "Contact", contact_path, class: 'list-item' %>
+
+      <%= link_to "Portfolio", portfolios_path, class: 'list-item' %>
+
+      <%= link_to "Blob", blogs_path, class: 'list-item' %>
+
+    </li>
+
+
+</ul>
+
+
 </header>
+
+</div> <!-- END COL 1 OF 3 -->
+
+
+
+
+
+<div class="col">
+
+
+      <h3>
+        Hello from Step Technologies
+      </h3>
+
+
+</div> <!-- END COL 2 OF 3 -->
+
+
+
+
+</div> <!-- END ROW -->
+<br>
+
+</div> <!-- END CONTAINER -->
 
 
