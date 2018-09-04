@@ -7,7 +7,8 @@
   <head>
 
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=0.65, maximum-scale=3.0, minimum-scale=0.5, shrink-to-fit=yes">
 
     <title><%= @page_title %></title>
 
@@ -20,49 +21,69 @@
     <%= stylesheet_link_tag    'particles', media: 'all', 'data-turbolinks-track': 'reload' %>
 
     <%= javascript_include_tag 'application' %>
-    <%= javascript_include_tag 'particles.js' %>
+    
     <%= javascript_include_tag 'app.js' %>
-
+    <%= javascript_include_tag 'particles.js' %>
 
   </head>
-  
     
     <body>
+                <div id="btn">
+                    <div id='top'></div>
+                    <div id='middle'></div>
+                    <div id='bottom'></div>
+                </div>
 
-    <div class="site-wrapper">
-      <div class="site-wrapper-inner">
+                <div id="box">
+                    <div id="items">
 
-        
+                        <ul>
+                        <%= link_to "Home", root_path, class: 'list-item' %>
+                        <br>
+                        <br>
+                        <%= link_to "About", about_me_path, class: 'list-item' %>
+                        <br>
+                        <br>
+                        <%= link_to "Contact", contact_path, class: 'list-item' %>
+                        <br>
+                        <br>
+                        <%= link_to "Portfolio", portfolios_path, class: 'list-item' %>
+                        <br>
+                        <br>
+                        <%= link_to "Blob", blogs_path, class: 'list-item' %>
+                        
+                        <%= javascript_include_tag 'nav.js' %>
+                        </ul>
 
-        <div class="cover-container">
+                    </div>
+                </div>
 
+            <div id="page-content-wrapper">
+                <div class="page-content">
+                    <div class="container">
+                        <div class="row">
 
+                                            <p class="notice"><%= notice %></p>
+                                            <p class="alert"><%= alert %></p>
+                            <div class="col-md-12">
 
-        <p class="notice"><%= notice %></p>
-        <p class="alert"><%= alert %></p>
+                                            <%= yield %>
 
-        <%= render "shared/application_nav" %>
-
-
-
-                <%= yield %>
-
-
-        <%= source_helper("application") %>
-
+                            </div>
+                                <div class="row">
+                                <div class="col-md-12">
+                                <%= render "shared/application_footer" %>
+                                </div>
+                                <%= source_helper("application") %>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
 
 
-    </body>
-
-
-    <br>
-    <%= render "shared/application_footer" %>
-    
-
-
+</body>
 
 </html>
 

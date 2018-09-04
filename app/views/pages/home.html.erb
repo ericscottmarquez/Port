@@ -1,12 +1,15 @@
 
 <div class="container">
   
-  <div class="row">
 
-    <div class="inner cover">
+
+
+  <div class="row justify-content-center">
+
+    <div class="col-sm-10">
 
         <div class="transbox">
-
+          <br>
           <h1 class="cover-heading"> Let's Work Together </h1>
           <hr>
 
@@ -33,60 +36,44 @@
           <p class="lead">
               <%= link_to "SOLUTIONS", about_me_path, class: "btn btn-secondary" %>
           </p>
-
         <hr>
-
       </div>
+
+      
+
     </div>
 
-----------
 <!-- end row 1 -->
 </div>
-----------
 
 
 
-
-  <div class="row">
+  <div class="row justify-content-center">
     
-    <div class="col-md-8 offset-md-4">
+    <div class="col-md-8">
 
-        <div class="transbox">
+        <div class="flex">
+          <div class="block">
+            <a href="#0" class="toggle"></a>
+              <div class="smallblockcontent">
+                [click me]
+              </div>
+                  <div class="content">
+                  <h2>Block title</h2>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam quis cursus tellus. Duis ac ipsum vitae purus aliquam aliquam. Sed sed dolor eros. Phasellus posuere urna.</p>
+            </div>
+          </div>
+        </div>
 
-          <h1 class="cover-heading"> Let's Work Together </h1>
-          <hr>
+                  <%= javascript_include_tag 'block.js' %>
 
-          <div class="glitch" data-text="In the online war for their business, Web Design, Sales and New Business Development go hand-in-hand.">
-            In the online war for their attention, Technology-research, Web Design, Sales and New Business Development go hand-in-hand. 
-          </div> 
 
-          <p class="lead"> 
-          </p>
-
-          <hr>
-            <h3> Blending art and function to convert new business with digital experience </h3> 
-          <br>
-          <hr>
-           <p class="lead"> 
-
-            With many companies offering tinkertoy solutions, 
-            many are not aware of the problems with such elementary products.
-            Using the appropriate design principles, sales psychology, and the latest technology to
-            get you found, we can help you generate a powerful return on your investment. 
-
-          </p>
-
-          <p class="lead">
-              <%= link_to "SOLUTIONS", about_me_path, class: "btn btn-secondary" %>
-          </p>
-
-        <hr>
-
-      </div>
     </div>
 
-
   </div>
+
+
+
 
 
 
