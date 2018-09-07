@@ -33,6 +33,7 @@ background: url("/assets/grass.jpeg") no-repeat center fixed;
       background-repeat:  no-repeat;
       background-attachment: fixed;
       background-size:  cover;
+      z-index: -1000;
 
 height: 100%;
 
@@ -40,19 +41,17 @@ height: 100%;
 
 
 
-/* _________HEADER TEXT DISSAPEAR NAV_______________IT INTEREFERES WITH THE FOOTER WAT_______________ */
+/* _________HEADER TEXT DISSAPEAR NAV______________________________ */
 
 
 .hero {
   position: relative;
-  height: 80vh;
+  height: 100vh;
   z-index: -11;
   background: url("/assets/tech2.jpeg") center no-repeat;
   opacity: 1;
 
 }
-
-
 
 
 /* ===================================== */
@@ -72,16 +71,17 @@ height: 100%;
 /* --- navbar sizes --- */
 /* --- navbar colors --- */
 
+
 }
 
 .navbar-brand {
   line-height: 40px;  
-  font-size: 2.3rem;
+  font-size: 2.5rem;
   text-align: center;
-  font-weight: 800;
+  font-weight: 850;
   color: #fff;
   font-family: monospace;
-  padding-left: 100px;
+  padding-left: 0px;
 }
 .navbar--size--xl {
   padding: 2rem 0;
@@ -102,7 +102,7 @@ height: 100%;
 }
 .navbar--color--primary {
   background: #ccff00;
-  opacity: 0.92;
+  opacity: 0.95;
 }
 .navbar--color--secondary {
   background: #43a6dd;
@@ -114,6 +114,88 @@ height: 100%;
 .navbar--color--ghost a {
   color: #fff;
 }
+
+/* ____________________convincing scroll down arrow_________________________________ */
+
+
+
+.d {
+  border: 1px solid #eee;
+  border-radius: 50%;
+  color: #eee;
+  text-align: center;
+  
+  bottom: 10vh;
+  display: block;
+  left: 50%;
+  margin-left: -50px;
+  position: absolute;
+  
+  height: 100px;
+  line-height: 100px;
+  width: 100px;
+  
+  -webkit-animation: a 1.7s infinite;
+  -moz-animation: a 1.7s infinite; 
+  -o-animation: a 1.7s infinite; 
+  animation: a 1.7s infinite;
+  
+  -webkit-transition: bottom 1s ease;
+  -moz-transition: bottom 1s ease;
+  -o-transition: bottom 1s ease;
+  transition: bottom 1s ease;  
+}
+
+.a {
+  border-right: 2px solid #eee;
+  border-bottom: 2px solid #eee;
+  border-radius: 2px;
+  color: #eee;
+  display: inline-block;
+  font-size: 0;
+  height: 50px;
+  line-height: 0;
+  margin-top: -25px;
+  text-align: center;
+  vertical-align: middle;
+  width: 50px;
+  
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  transform: rotate(45deg);
+}
+
+@-webkit-keyframes a {
+  0%   { opacity: .3; }
+  50%   { opacity: 1; }
+  100% { opacity: .3; }
+}
+
+@-moz-keyframes a {
+  0%   { opacity: .3; }
+  50%   { opacity: 1; }
+  100% { opacity: .3; }
+}
+
+@-o-keyframes a {
+  0%   { opacity: .3; }
+  50%   { opacity: 1; }
+  100% { opacity: .3; }
+}
+
+@keyframes a {
+  /*0%   { opacity: .3; }
+  50%   { opacity: 1; }
+  100% { opacity: .3; }*/
+  
+  0%   { border-color: #eee; }
+  50%   { border-color: #555; }
+  100% { border-color: #eee; }
+
+}
+
 
 
 
@@ -190,11 +272,11 @@ height: 100%;
           #btn {
             position: fixed;
             z-index: 5;
-            top: 80px;
+            top: 52px;
             left: 40px;
             cursor: pointer;
             transition: left 500ms cubic-bezier(0.6, 0.05, 0.28, 0.91);
-            transform: scale(2, 2);
+            transform: scale(2.3, 2.3);
 
           }
 
@@ -370,7 +452,7 @@ ul {
    height: 100vh;
    z-index: -10;
    color: white;
-   position: absolute;
+   position: fixed;
  }
 
 /* ___________________TRANS BOX____________________________________ */
@@ -405,54 +487,6 @@ div.transbox h3 {
 }
 
 
-.glitch{
-  color:white;
-  font-size:15px;
-  position:relative;
-  width:400px;
-  margin:0 auto;
-}
-@keyframes noise-anim{
-  $steps:7;
-  @for $i from 0 through $steps{
-    #{percentage($i*(1/$steps))}{
-      clip:rect(random(100)+px,9999px,random(100)+px,0);
-    }
-  }
-}
-.glitch:after{
-  content:attr(data-text);
-  position:absolute;
-  left:2px;
-  text-shadow:-1px 0 red;
-  top:0;
-  color:white;
-  background:black;
-  overflow:hidden;
-  clip:rect(0,900px,0,0); 
-  animation:noise-anim 2s infinite linear alternate-reverse;
-}
-
-@keyframes noise-anim-2{
-  $steps:7;
-  @for $i from 0 through $steps{
-    #{percentage($i*(1/$steps))}{
-      clip:rect(random(100)+px,9999px,random(100)+px,0);
-    }
-  }
-}
-.glitch:before{
-  content:attr(data-text);
-  position:absolute;
-  left:-2px;
-  text-shadow:1px 0 blue; 
-  top:0;
-  color:white;
-  background:black;
-  overflow:hidden;
-  clip:rect(0,900px,0,0); 
-  animation:noise-anim-2 3s infinite linear alternate-reverse;
-}
 
 /* __________________________________________________________________________ */
 
@@ -489,7 +523,7 @@ div.transbox h3 {
       .block {
         height:200px;
         width:200px;
-        opacity: 0.85;
+        opacity: 0.9;
         color:#FFF;
         border-top:1px solid rgba(255,255,255,0.1);
         border-bottom:1px solid rgba(0,0,0,0.1);
@@ -497,27 +531,28 @@ div.transbox h3 {
         vertical-align: middle;
         line-height: 200px;
         font-size:18px;
+        text-shadow: 1px 1px #000;
         font-family: monospace;
         position:relative;
         background-color:#000;
-        box-shadow: 12px 12px 2px 1px rgba(0, 0, 255, .2);
+        box-shadow: 15px 15px 3px 1px rgba(0, 0, 255, .2);
         transition:0.3s all ease;
         .smallblockcontent {
           opacity:0;
-          -webkit-animation: fadein 2s forwards;
+          -webkit-animation: fadein 3s forwards;
           animation: fadein 2s forwards;
           animation-delay:0.5s;
         }
         &.expanded {
-          transition:0.3s all ease;
+          transition:0.4s all ease;
           width:900px;
           height:500px;
           padding:40px;
           line-height:normal;
           background: #644cad;
-          background: -moz-linear-gradient(left, #644cad 0%, #4426a8 100%);
-          background: -webkit-linear-gradient(left, #644cad 0%, #4426a8 100%);
-          background: linear-gradient(to right, #644cad 0%, #4426a8 100%);
+          background: -moz-linear-gradient(left, #00f5ff 0%, #39ff14 100%);
+          background: -webkit-linear-gradient(left, #00f5ff 0%, #39ff14 100%);
+          background: linear-gradient(to right, #00f5ff 0%, #39ff14 100%);
           .smallblockcontent {
             display:none;
           }

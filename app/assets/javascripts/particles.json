@@ -4,7 +4,7 @@
   "particles": {
     "fps_limit": 30,
     "number": {
-      "value": 30,
+      "value": 50,
       "density": {
         "enable": true,
         "value_area": 900
@@ -23,7 +23,7 @@
         "nb_sides": 10
       },
       "image": {
-        "src": "https://img.buzzfeed.com/buzzfeed-static/static/campaign_images/webdr06/2013/7/1/11/33-things-only-chef-gordon-ramsay-can-get-away-wi-1-8467-1372692562-0_big.jpg",
+        "src": "/assets/tech1.jpeg",
         "width": 10,
         "height": 10
       }
@@ -51,14 +51,14 @@
     },
     "line_linked": {
       "enable": true,
-      "distance": 550,
+      "distance": 200,
       "color": "#39ff14",
-      "opacity": 0.9,
+      "opacity": 0.7,
       "width": 3
     },
     "move": {
       "enable": true,
-      "speed": 5,
+      "speed": 2,
       "direction": "none",
       "random": true,
       "straight": false,
