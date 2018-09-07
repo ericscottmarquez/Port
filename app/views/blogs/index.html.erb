@@ -3,7 +3,7 @@
 <meta name="keywords" content="<%= @seo_keywords %>" />
 
 <div class="col-sm-6 blog-main">
-  <%= render @blogs %>
+  <%= render @blogs, rows: '7' %>
 
   <%= paginate @blogs %>
 
@@ -13,7 +13,6 @@
 <br>
 
     <%= link_to 'New Blog', new_blog_path if logged_in?(:site_admin) %>
-
 
 
     <% if session[:source] %>

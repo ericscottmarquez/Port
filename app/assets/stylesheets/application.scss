@@ -14,16 +14,9 @@
 
 body, html {
   cursor: url("/assets/GORDUHN.gif"), pointer;
-
 }
 
 
-* {
-  font-family: 'good-times-rg';
-  src:font-url('good-times-rg.ttf');
-  font-weight: normal;
-  font-style: regular;
-}
 
 
 
@@ -34,21 +27,94 @@ body, html {
 
 body {
 
-position: relative;
+background: url("/assets/grass.jpeg") no-repeat center fixed;
 
-background: url("/assets/ricepaduru.jpeg") no-repeat center center fixed;
-
-background-size: cover;
+      background-position: center center;
+      background-repeat:  no-repeat;
+      background-attachment: fixed;
+      background-size:  cover;
 
 height: 100%;
 
-position: bottom; 
+}
 
-width: 100%;
-    
-font-family: "good-times-rg";
+
+
+/* _________HEADER TEXT DISSAPEAR NAV_______________IT INTEREFERES WITH THE FOOTER WAT_______________ */
+
+
+.hero {
+  position: relative;
+  height: 80vh;
+  z-index: -11;
+  background: url("/assets/tech2.jpeg") center no-repeat;
+  opacity: 1;
 
 }
+
+
+
+
+/* ===================================== */
+/* ===== THE INTERESTING STUFF NOW ===== */
+/* ===================================== */
+
+.navbar {
+  z-index: 4;
+  border: none;
+  transition: 0.4s;
+  width: 100%;
+  position: fixed;
+  text-align: center;
+
+
+
+/* --- navbar sizes --- */
+/* --- navbar colors --- */
+
+}
+
+.navbar-brand {
+  line-height: 40px;  
+  font-size: 2.3rem;
+  text-align: center;
+  font-weight: 800;
+  color: #fff;
+  font-family: monospace;
+  padding-left: 100px;
+}
+.navbar--size--xl {
+  padding: 2rem 0;
+}
+.navbar--size--lg {
+  padding: 2rem 0;
+}
+.navbar--size--md {
+  padding: 1rem 0;
+}
+.navbar--size--sm {
+  padding: 1;
+}
+
+
+.navbar--color--white {
+  background: #fff;
+}
+.navbar--color--primary {
+  background: #ccff00;
+  opacity: 0.92;
+}
+.navbar--color--secondary {
+  background: #43a6dd;
+}
+.navbar--color--ghost {
+  background: rgba(0,0,0,0.7);
+
+}
+.navbar--color--ghost a {
+  color: #fff;
+}
+
 
 
 /* ___________________________SIDEBAR JANK_________________________________ */
@@ -60,7 +126,7 @@ font-family: "good-times-rg";
 }
 
 
-/* _____________________MOBILE NAV CONDITIONAL JANK__________________________ 
+/* _____________________MOBILE NAV CONDITIONAL JANK_______FIX THIS SOON_________________ 
 
 @media (min-width: 768px) {
     .mobile-nav {
@@ -124,15 +190,16 @@ font-family: "good-times-rg";
           #btn {
             position: fixed;
             z-index: 5;
-            top: 30px;
-            left: 20px;
+            top: 80px;
+            left: 40px;
             cursor: pointer;
             transition: left 500ms cubic-bezier(0.6, 0.05, 0.28, 0.91);
             transform: scale(2, 2);
+
           }
 
           #btn div {
-            width: 35px;
+            width: 40px;
             height: 2px;
             margin-bottom: 8px;
             background-color: #00DFFC;
@@ -142,7 +209,7 @@ font-family: "good-times-rg";
           }
 
           #btn.active {
-            left: 215px;
+            left: 180px;
           }
           #btn.active div {
             background-color: #fff;
@@ -170,7 +237,7 @@ font-family: "good-times-rg";
             width: 275px;
             opacity: 0;
             padding: 20px 0px;
-            background: url("/assets/city.jpeg");
+            background-color: #000;
             height: 100%;
             color: #343838;
             transition: all 300ms cubic-bezier(0.6, 0.05, 0.28, 0.91);
@@ -183,7 +250,7 @@ font-family: "good-times-rg";
 
           #items {
             position: relative;
-            top: 20%;
+            top: 35%;
             -webkit-transform: translateY(-50%);
                     transform: translateY(-50%);
           }
@@ -213,19 +280,20 @@ font-family: "good-times-rg";
 
 /* __________________________________________________________________________ */
 
-/* nav */
+/* nav 3d icons */
 
 ul {
   list-style: none;
   position: absolute;
-  transform: rotate(-1deg) skew(5deg,2.5deg);
-  transform: scale(1.5, 1.5);
+  transform: rotate(0deg) skew(0deg,0deg);
+  transform: scale(2, 2);
 }
 
 
 .list-item {
   background: #000;
   color: #fff;
+  font-family: monospace;
   text-align: center;
   height: 2.5em;
   width: 4em;
@@ -241,14 +309,14 @@ ul {
   
   &:hover {
     background: #fff;
-    color: #000;
+    color: #07cff6;
     transform: translate(.9em, -.9em);
-    transition: all .25s linear;
+    transition: all .15s linear;
     box-shadow: -2em 2em 0 #e1e1e1;
     
     &:before, 
     &:after { 
-      transition: all .25s linear; 
+      transition: all .05s linear; 
     }
     
     &:before {
@@ -271,7 +339,7 @@ ul {
   &:after {
     content: '';
     position: absolute;
-    transition: all .25s linear;
+    transition: all .05s linear;
     width: .5em;
   }
 
@@ -305,19 +373,35 @@ ul {
    position: absolute;
  }
 
-/* __________________________________________________________________________ */
+/* ___________________TRANS BOX____________________________________ */
 
 div.transbox {
   margin: 30px;
   background-color: #000;
   border: 1px solid black;
-  opacity: 0.8;
+  opacity: 0.9;
   filter: alpha(opacity=90); /* For IE8 and earlier */
 }
 
 div.transbox p {
   margin: 5%;
-  font-weight: "";
+  font-family: monospace;
+  font-size: 1.5rem;
+  line-height: 30px;
+}
+
+div.transbox h1 {
+  font-family: monospace;
+}
+
+div.transbox h2 {
+  font-family: monospace;
+  margin: 5%;
+}
+
+div.transbox h3 {
+  font-family: monospace;
+  margin: 5%;
 }
 
 
@@ -413,6 +497,7 @@ div.transbox p {
         vertical-align: middle;
         line-height: 200px;
         font-size:18px;
+        font-family: monospace;
         position:relative;
         background-color:#000;
         box-shadow: 12px 12px 2px 1px rgba(0, 0, 255, .2);
@@ -465,8 +550,8 @@ div.transbox p {
 a,
 a:focus,
 a:hover {
-font-family: "good-times-rg";
-  color: #fff;
+font-family: monospace;
+  color: #ccff00;
 }
 
 /* Custom default button */
@@ -493,13 +578,13 @@ font-family: "good-times-rg";
 html,
 body {
   height: 120%;
-  font-family: "good-times-rg";
+  font-family: good-times-rg;
 }
 body {
   color: #fff;
   text-align: center;
   text-shadow: 0 .05rem .1rem rgba(0,0,0,.5);
-  font-family: "good-times-rg";
+  font-family: good-times-rg;
 
 }
 
@@ -595,7 +680,7 @@ body {
   .masthead,
   .mastfoot,
   .cover-container {
-    width: 55rem;
+    width: 50rem;
   }
 }
 
