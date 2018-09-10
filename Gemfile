@@ -9,6 +9,16 @@ gem 'rails', '~> 5.2.0'
 gem 'pg', '>= 0.18', '< 2.0'
 # Use Puma as the app server
 gem 'puma', '~> 3.11'
+
+gem "pug-rails", "~> 3.0.0"
+#pug is for making nice looking html files kinda like haml
+gem 'webpacker'
+#webpacker allows for using react, command webpacker:install:react
+gem 'react-rails', '~> 2.4', '>= 2.4.7'
+#NEED REACT-RAILS TO HAVE SERVER RENDERING OR ELSE EVERYTHING SHITS THE BED
+gem 'thor', '~> 0.19.1'
+#foreman gem allows for running both webpack and rails server simultaneously, needs THOR to run
+gem 'foreman', '~> 0.82.0' 
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
 # Use Uglifier as compressor for JavaScript assets
@@ -28,6 +38,9 @@ gem 'jbuilder', '~> 2.5'
 # gem 'redis', '~> 4.0'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
+gem 'sprockets'
+gem "sprockets-es6"
+
 
 gem 'turbolinks', '~> 5.2'
 

@@ -27,18 +27,27 @@ body, html {
 
 body {
 
-background: url("/assets/grass.jpeg") no-repeat center fixed;
+background: url("/assets/grass.jpeg") no-repeat top center fixed;
 
       background-position: center center;
       background-repeat:  no-repeat;
-      background-attachment: fixed;
+      background-attachment: cover;
       background-size:  cover;
-      z-index: -1000;
+      z-index: -10000;
 
-height: 100%;
+background-size: 100vmax 100vmax;
+
+
+background-attachment:fixed;
+background-repeat:no-repeat;
+background-size:cover;
+-moz-background-size: cover;
+-webkit-background-size: cover;
+-o-background-size: cover;
+background-position: center center;
+
 
 }
-
 
 
 /* _________HEADER TEXT DISSAPEAR NAV______________________________ */
@@ -46,7 +55,7 @@ height: 100%;
 
 .hero {
   position: relative;
-  height: 100vh;
+  height: 110vh;
   z-index: -11;
   background: url("/assets/tech2.jpeg") center no-repeat;
   opacity: 1;
@@ -61,7 +70,7 @@ height: 100%;
 .navbar {
   z-index: 4;
   border: none;
-  transition: 0.4s;
+  transition: 0.5s;
   width: 100%;
   position: fixed;
   text-align: center;
@@ -75,22 +84,24 @@ height: 100%;
 }
 
 .navbar-brand {
-  line-height: 40px;  
-  font-size: 2.5rem;
+  line-height: 28px;  
+  font-size: 1.9rem;
   text-align: center;
-  font-weight: 850;
+  font-weight: 500;
   color: #fff;
   font-family: monospace;
   padding-left: 0px;
 }
+
+
 .navbar--size--xl {
-  padding: 2rem 0;
+  padding: 80vh 0;
 }
 .navbar--size--lg {
   padding: 2rem 0;
 }
 .navbar--size--md {
-  padding: 1rem 0;
+  padding: 1.6rem 0;
 }
 .navbar--size--sm {
   padding: 1;
@@ -100,13 +111,15 @@ height: 100%;
 .navbar--color--white {
   background: #fff;
 }
+
 .navbar--color--primary {
-  background: #ccff00;
-  opacity: 0.95;
+  background: rgba(75,0,130,0.2);
 }
+
 .navbar--color--secondary {
   background: #43a6dd;
 }
+
 .navbar--color--ghost {
   background: rgba(0,0,0,0.7);
 
@@ -120,37 +133,38 @@ height: 100%;
 
 
 .d {
-  border: 1px solid #eee;
+  border: 5px solid #39ff14;
   border-radius: 50%;
-  color: #eee;
+  color: #39ff14;
   text-align: center;
   
-  bottom: 10vh;
+  bottom: 50vh;
   display: block;
   left: 50%;
   margin-left: -50px;
   position: absolute;
-  
+  z-index: 2000;
   height: 100px;
   line-height: 100px;
   width: 100px;
   
   -webkit-animation: a 1.7s infinite;
-  -moz-animation: a 1.7s infinite; 
-  -o-animation: a 1.7s infinite; 
+  -moz-animation: a 1.7s infinite;
+  -o-animation: a 1.7s infinite;
   animation: a 1.7s infinite;
   
   -webkit-transition: bottom 1s ease;
   -moz-transition: bottom 1s ease;
   -o-transition: bottom 1s ease;
-  transition: bottom 1s ease;  
+  transition: bottom 1s ease;
+
 }
 
 .a {
-  border-right: 2px solid #eee;
-  border-bottom: 2px solid #eee;
-  border-radius: 2px;
-  color: #eee;
+  border-right: 4px solid #39ff14;
+  border-bottom: 4px solid #39ff14;
+  border-radius: 4px;
+  color: #39ff14;
   display: inline-block;
   font-size: 0;
   height: 50px;
@@ -159,6 +173,8 @@ height: 100%;
   text-align: center;
   vertical-align: middle;
   width: 50px;
+  z-index: 2000;
+
   
   -webkit-transform: rotate(90deg);
   -moz-transform: rotate(0deg);
@@ -236,11 +252,6 @@ height: 100%;
 
 
 */
-
-
-
-
-
 
       .mobile-nav{
             box-sizing: border-box;
@@ -332,10 +343,11 @@ height: 100%;
 
           #items {
             position: relative;
-            top: 35%;
+            top: 50%;
             -webkit-transform: translateY(-50%);
                     transform: translateY(-50%);
           }
+
           #items .item {
             position: relative;
             cursor: pointer;
@@ -343,9 +355,10 @@ height: 100%;
             padding: 15px 30px;
             transition: all 250ms;
           }
+
           #items .item:hover {
             padding: 15px 45px;
-            background-color: rgba(52, 56, 56, 0.2);
+            background-color: #C7C7C7;
           }
 
           #btn, #btn * {
@@ -380,7 +393,7 @@ ul {
   height: 2.5em;
   width: 4em;
   vertical-align: middle;
-  line-height: 2.5em;
+  line-height: 2em;
   border-bottom: 1px solid #070707;
   position: relative;
   display: block;
@@ -395,6 +408,7 @@ ul {
     transform: translate(.9em, -.9em);
     transition: all .15s linear;
     box-shadow: -2em 2em 0 #e1e1e1;
+
     
     &:before, 
     &:after { 
@@ -403,9 +417,9 @@ ul {
     
     &:before {
       background: #00ff3e;
-      width: 1em;
-      top: .5em;
-      left: -1em;
+      width: 1em; /* here for expanded left side 3d box shadow colored */
+      top: .4em;
+      left: -.97em;
     }
     
     &:after {
@@ -433,6 +447,7 @@ ul {
     transform: rotate(90deg) skew(0,45deg);
   }
   
+
   &:before {
     height: 2.5em;
     background: #121212;
@@ -458,32 +473,36 @@ ul {
 /* ___________________TRANS BOX____________________________________ */
 
 div.transbox {
-  margin: 30px;
+  margin: 4px;
   background-color: #000;
   border: 1px solid black;
-  opacity: 0.9;
+  opacity: 0.8;
   filter: alpha(opacity=90); /* For IE8 and earlier */
+  width: 100%;
 }
 
 div.transbox p {
   margin: 5%;
   font-family: monospace;
   font-size: 1.5rem;
-  line-height: 30px;
+  line-height: 22em;
 }
 
 div.transbox h1 {
   font-family: monospace;
+  line-height: 10em;
 }
 
 div.transbox h2 {
   font-family: monospace;
   margin: 5%;
+  line-height: 10em;
 }
 
 div.transbox h3 {
   font-family: monospace;
   margin: 5%;
+  line-height: 10em;
 }
 
 
@@ -582,11 +601,13 @@ div.transbox h3 {
 
 
 /* __________________________DEFAULT JANK_________________________________ */
+
+
 a,
 a:focus,
 a:hover {
-font-family: monospace;
-  color: #ccff00;
+
+  color: #fff;
 }
 
 /* Custom default button */
