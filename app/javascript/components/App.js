@@ -1,12 +1,13 @@
 
-
 import React from 'react';
 
 
+
 var months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
-export default App;
+
 /* App */
-class App extends React.Component {
+
+export class App extends React.Component {
   constructor(args) {
     super(args);
     
@@ -234,5 +235,4 @@ const getPrettyTime = (date) => {
   const time = date.split(' ')[1].split(':');
   return `${time[0]}:${time[1]}`;
 }
-
 
