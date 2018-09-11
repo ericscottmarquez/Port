@@ -4,108 +4,111 @@
   <body>
 
 
-<div id="particles-js"></div>
+    <div id="particles-js"></div>
 
-  <head>
+      <head>
 
-    <meta charset="utf-8">
-    
-    <meta name="viewport" content="width=device-width, initial-scale=0.65, maximum-scale=3.0, minimum-scale=0.5, shrink-to-fit=yes">
+        <meta charset="utf-8">
+        
+        <meta name="viewport" content="width=device-width, initial-scale=0.65, maximum-scale=3.0, minimum-scale=0.5, shrink-to-fit=yes">
 
-    <title><%= @page_title %></title>
+        <title><%= @page_title %></title>
 
-    <%= csrf_meta_tags %>
-    <%= csp_meta_tag %>
+        <%= csrf_meta_tags %>
+        <%= csp_meta_tag %>
 
-    <meta name="keywords" content="<%= @seo_keywords %>" />
+        <meta name="keywords" content="<%= @seo_keywords %>" />
 
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= stylesheet_link_tag    'particles', media: 'all', 'data-turbolinks-track': 'reload' %>
+        <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+        <%= stylesheet_link_tag    'particles', media: 'all', 'data-turbolinks-track': 'reload' %>
 
-    <%= javascript_include_tag 'application' %>
-    
-    <%= javascript_include_tag 'app.js' %>
-    <%= javascript_include_tag 'particles.js' %>
+        <%= javascript_include_tag 'application' %>
+        
+        <%= javascript_include_tag 'app.js' %>
+        <%= javascript_include_tag 'particles.js' %>
+        <%= javascript_include_tag 'fixedbackground.js' %>
 
-    
-<%= render 'shared/application_header' %>
-
-  </head>
-
-  
-
-  
-
-            
+        
+        <%= render 'shared/application_header' %>
 
 
-                <div id="btn">
-                    <div id='top'></div>
-                    <div id='middle'></div>
-                    <div id='bottom'></div>
-                </div>
+      </head>
 
-                <div id="box">
-                    <div id="items">
-
-                        <ul>
-                        <%= link_to "Home", root_path, class: 'list-item' %>
-                        <br>
-                        <br>
-                        <%= link_to "About", about_me_path, class: 'list-item' %>
-                        <br>
-                        <br>
-                        <%= link_to "Contact", contact_path, class: 'list-item' %>
-                        <br>
-                        <br>
-                        <%= link_to "Portfolio", portfolios_path, class: 'list-item' %>
-                        <br>
-                        <br>
-                        <%= link_to "Blob", blogs_path, class: 'list-item' %>
-                        
-                        <%= javascript_include_tag 'nav.js' %>
-                        </ul>
-
-                            <div class="item">Item 1</div>
-                            <div class="item">Item 2</div>
-                            <div class="item">Item 3</div>
+      
 
 
+                
 
+
+                    <div id="btn">
+                        <div id='top'></div>
+                        <div id='middle'></div>
+                        <div id='bottom'></div>
                     </div>
-                </div>
+
+                    <div id="box">
+                        <div id="items">
+
+                            <ul>
+                            <%= link_to "Home", root_path, class: 'list-item' %>
+                            <br>
+                            <br>
+                            <%= link_to "About", about_me_path, class: 'list-item' %>
+                            <br>
+                            <br>
+                            <%= link_to "Contact", contact_path, class: 'list-item' %>
+                            <br>
+                            <br>
+                            <%= link_to "Portfolio", portfolios_path, class: 'list-item' %>
+                            <br>
+                            <br>
+                            <%= link_to "Blob", blogs_path, class: 'list-item' %>
+                            
+                            <%= javascript_include_tag 'nav.js' %>
+                            </ul>
+
+                                <div class="item">Item 1</div>
+                                <div class="item">Item 2</div>
+                                <div class="item">Item 3</div>
+
+                        </div>
+                    </div>
 
 
 
-            <div id="page-content-wrapper">
-                <div class="page-content">
-                    <div class="container">
-                        <div class="row">
 
-                                            <p class="notice"><%= notice %></p>
-                                            <p class="alert"><%= alert %></p>
-                            <div class="col-md-12">
 
-                                            <%= yield %>
+                <div id="page-content-wrapper">
 
+                    <div class="page-content">
+                        <div class="container">
+                            <div class="row">
+
+                                                <p class="notice"><%= notice %></p>
+                                                <p class="alert"><%= alert %></p>
+                                                
+                                <div class="col-md-12">
+
+                                                <%= yield %>
+
+                                </div>
+
+                                    <div class="row">
+                                    <div class="col-md-12">
+                                    <%= render "shared/application_footer" %>
+                                    </div>
+                                    <%= source_helper("application") %>
+                                    </div>
                             </div>
 
-                                <div class="row">
-                                <div class="col-md-12">
-                                <%= render "shared/application_footer" %>
-                                </div>
-                                <%= source_helper("application") %>
-                                </div>
                         </div>
 
                     </div>
-
                 </div>
-            </div>
-        </div>
+            
 
 
-</body>
+    </body>
 
 </html>
 

@@ -5,17 +5,17 @@ $(window).scroll(function() {
 
     if ($(this).scrollTop()>0)
      {
-        $('.d').fadeOut(180);
+        $('.d').fadeOut(10);
      }
     else
      {
-      $('.d').fadeIn(180);
+      $('.d').fadeIn(10);
      }
 
 
 
 
 
- });
+ }50);
 
 

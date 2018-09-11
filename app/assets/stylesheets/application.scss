@@ -14,8 +14,8 @@
 
 body, html {
   cursor: url("/assets/GORDUHN.gif"), pointer;
-}
 
+}
 
 
 
@@ -29,25 +29,26 @@ body {
 
 background: url("/assets/grass.jpeg") no-repeat top center fixed;
 
-      background-position: center center;
-      background-repeat:  no-repeat;
-      background-attachment: cover;
-      background-size:  cover;
-      z-index: -10000;
+
+background-position: left top;
+
+background-repeat: no-repeat;
+
+background-attachment: fixed;
+
 
 background-size: 100vmax 100vmax;
 
+-webkit-background-size: 100vmax 100vmax;
+-moz-background-size: 100vmax 100vmax;
+-o-background-size: 100vmax 100vmax;
 
-background-attachment:fixed;
-background-repeat:no-repeat;
-background-size:cover;
--moz-background-size: cover;
--webkit-background-size: cover;
--o-background-size: cover;
-background-position: center center;
+
+z-index: -10000;
 
 
 }
+
 
 
 /* _________HEADER TEXT DISSAPEAR NAV______________________________ */
@@ -57,8 +58,11 @@ background-position: center center;
   position: relative;
   height: 110vh;
   z-index: -11;
-  background: url("/assets/tech2.jpeg") center no-repeat;
+  background: url("/assets/daisy.jpeg") center no-repeat;
   opacity: 1;
+
+     -webkit-mask-image:-webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,.7)), to(rgba(0,0,0,0)));
+      mask-image: linear-gradient(to bottom, rgba(0,0,0,.7), rgba(0,0,0,0));
 
 }
 
@@ -70,11 +74,10 @@ background-position: center center;
 .navbar {
   z-index: 4;
   border: none;
-  transition: 0.5s;
+  transition: .7s;
   width: 100%;
   position: fixed;
   text-align: center;
-
 
 
 /* --- navbar sizes --- */
@@ -84,7 +87,7 @@ background-position: center center;
 }
 
 .navbar-brand {
-  line-height: 28px;  
+  line-height: 32px;  
   font-size: 1.9rem;
   text-align: center;
   font-weight: 500;
@@ -113,7 +116,9 @@ background-position: center center;
 }
 
 .navbar--color--primary {
-  background: rgba(75,0,130,0.2);
+  background: rgba(75,0,130,0.3);
+    z-index: 4;
+
 }
 
 .navbar--color--secondary {
@@ -138,12 +143,12 @@ background-position: center center;
   color: #39ff14;
   text-align: center;
   
-  bottom: 50vh;
+  bottom: 95vh;
   display: block;
   left: 50%;
   margin-left: -50px;
   position: absolute;
-  z-index: 2000;
+  z-index: 0;
   height: 100px;
   line-height: 100px;
   width: 100px;
@@ -161,9 +166,9 @@ background-position: center center;
 }
 
 .a {
-  border-right: 4px solid #39ff14;
-  border-bottom: 4px solid #39ff14;
-  border-radius: 4px;
+  border-right: 5px solid #39ff14;
+  border-bottom: 5px solid #39ff14;
+  border-radius: 5px;
   color: #39ff14;
   display: inline-block;
   font-size: 0;
@@ -173,7 +178,7 @@ background-position: center center;
   text-align: center;
   vertical-align: middle;
   width: 50px;
-  z-index: 2000;
+  z-index: 0;
 
   
   -webkit-transform: rotate(90deg);
@@ -218,10 +223,6 @@ background-position: center center;
 /* ___________________________SIDEBAR JANK_________________________________ */
 
 
-#page-content-wrapper {
-  width: 100%;
-  overflow: hidden;
-}
 
 
 /* _____________________MOBILE NAV CONDITIONAL JANK_______FIX THIS SOON_________________ 
@@ -257,10 +258,6 @@ background-position: center center;
             box-sizing: border-box;
           }
 
-          body {
-            background-color: #343838;
-            font-size: 16px;
-          }
 
           #page-wrapper {
             position: absolute;
@@ -470,40 +467,16 @@ ul {
    position: fixed;
  }
 
-/* ___________________TRANS BOX____________________________________ */
+/* ___________________ BOX____________________________________ */
 
-div.transbox {
-  margin: 4px;
-  background-color: #000;
-  border: 1px solid black;
-  opacity: 0.8;
-  filter: alpha(opacity=90); /* For IE8 and earlier */
-  width: 100%;
-}
 
-div.transbox p {
-  margin: 5%;
-  font-family: monospace;
-  font-size: 1.5rem;
-  line-height: 22em;
-}
 
-div.transbox h1 {
-  font-family: monospace;
-  line-height: 10em;
-}
 
-div.transbox h2 {
-  font-family: monospace;
-  margin: 5%;
-  line-height: 10em;
-}
 
-div.transbox h3 {
-  font-family: monospace;
-  margin: 5%;
-  line-height: 10em;
-}
+
+
+
+
 
 
 
@@ -542,19 +515,19 @@ div.transbox h3 {
       .block {
         height:200px;
         width:200px;
-        opacity: 0.9;
-        color:#FFF;
+        opacity: 0.7;
+        color:#000;
         border-top:1px solid rgba(255,255,255,0.1);
         border-bottom:1px solid rgba(0,0,0,0.1);
         text-align:center;
         vertical-align: middle;
         line-height: 200px;
         font-size:18px;
-        text-shadow: 1px 1px #000;
+        text-shadow: .5px .5px #000;
         font-family: monospace;
         position:relative;
-        background-color:#000;
-        box-shadow: 15px 15px 3px 1px rgba(0, 0, 255, .2);
+        background-color:#fff;
+        box-shadow: 11px 11px 3px 1px rgba(0, 0, 255, .1);
         transition:0.3s all ease;
         .smallblockcontent {
           opacity:0;
@@ -569,9 +542,9 @@ div.transbox h3 {
           padding:40px;
           line-height:normal;
           background: #644cad;
-          background: -moz-linear-gradient(left, #00f5ff 0%, #39ff14 100%);
-          background: -webkit-linear-gradient(left, #00f5ff 0%, #39ff14 100%);
-          background: linear-gradient(to right, #00f5ff 0%, #39ff14 100%);
+          background: -moz-linear-gradient(left, #00f5ff 0%, #fff 100%);
+          background: -webkit-linear-gradient(left, #00f5ff 0%, #fff 100%);
+          background: linear-gradient(to right, #00f5ff 0%, #fff 100%);
           .smallblockcontent {
             display:none;
           }
@@ -587,6 +560,7 @@ div.transbox h3 {
             display:block;
           }
         }
+
         a {
           position:absolute;
           top:0;
@@ -615,15 +589,18 @@ a:hover {
 .btn-secondary:hover,
 .btn-secondary:focus {
   color: #333;
-  text-shadow: none; /* Prevent inheritance from `body` */
+  text-shadow: 3px; /* Prevent inheritance from `body` */
   background-color: #fff;
-  border: .05rem solid #fff;
+  border: .15rem solid #39ff14;
+
+  transform: scale(1.5, 1.5);
 
 }
 
 .btn-secondary:hover {
      color: #39ff14;
      background-color: #3f704d;
+     transform: scale(2.5, 2.5);
 }
 
 
@@ -631,18 +608,6 @@ a:hover {
  * Base structure
  */
 
-html,
-body {
-  height: 120%;
-  font-family: good-times-rg;
-}
-body {
-  color: #fff;
-  text-align: center;
-  text-shadow: 0 .05rem .1rem rgba(0,0,0,.5);
-  font-family: good-times-rg;
-
-}
 
 
 
@@ -745,12 +710,50 @@ body {
  * custom stylez
  */
 
+h1 {
+    text-align: center;
+    line-height: 4em;
+    font-family: monospace;
+}
 
+h2 {
+    text-align: center;
+    font-family: monospace;
+    line-height: 3em;
+
+}
+
+h3 {
+    text-align: center;
+    font-family: monospace;
+    line-height: 3em;
+}
+
+p {
+    text-align: center;
+    font-family: monospace;
+    line-height: 3em;
+    font-size: 2rem;
+}
+
+
+@-webkit-keyframes blink { 50% { border-color: #ff0000; border-color: #000; }  }
+.card {
+  color: black;
+  text-align: left;
+  background: #fff;
+  opacity: 0.8;
+  border: .5rem solid #39ff14;
+  -webkit-animation: blink .7s step-end infinite alternate; 
+}
 
 
 .card-block {
   color: black;
   text-align: left;
+  background: #fff;
+  opacity: 0.7;
+
 }
 
 
@@ -770,6 +773,7 @@ hr {
     margin-bottom: 20px;
 
     width: 75%;
+
 }
 
 .auth-links a {
@@ -795,3 +799,4 @@ hr {
 
 }
 
+ 

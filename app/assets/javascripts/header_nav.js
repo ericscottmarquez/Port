@@ -1,4 +1,4 @@
- // grabbing the class names from the data attributes
+ // This is for the TRANSFORMING NAVBAR grabbing the class names from the data attributes
 var navBar = $('.navbar'),
 data = navBar.data();
 
@@ -39,7 +39,7 @@ setInterval(function () {
     // set it back to false
     scrolling = false;
     // check scroll position
-    if ($(window).scrollTop() > 70) {
+    if ($(window).scrollTop() > 100) {
       // user has scrolled > 100px from top since last check
       if (!scrolledPast) {
         switchInto();
@@ -52,4 +52,4 @@ setInterval(function () {
     }
   }
   // take a breath.. hold event listener from firing for 100ms
-}, 50);
+}, 300);
