@@ -4,11 +4,11 @@
   <div class="container">
     <nav class="nav blog-nav">
 
-        <%= link_to "Blob", blogs_path, class: 'nav-link active'  %>
-        <%= link_to "Home", root_path, class: 'nav-link' %>
-        <%= link_to "About", about_me_path, class: 'nav-link'  %>
-        <%= link_to "Contact", contact_path, class: 'nav-link'  %>
-        <%= link_to "Portfolio", portfolios_path, class: 'nav-link'  %>
+        <%= link_to "Blob", blogs_path, class: 'nav-link active', method: :get  %>
+        <%= link_to "Home", root_path, class: 'nav-link', method: :get %>
+        <%= link_to "About", about_me_path, class: 'nav-link', method: :get  %>
+        <%= link_to "Contact", contact_path, class: 'nav-link', method: :get  %>
+        <%= link_to "Portfolio", portfolios_path, class: 'nav-link', method: :get  %>
         <%= login_helper 'nav-link' %>
     </nav>
   </div>

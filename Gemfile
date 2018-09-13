@@ -51,7 +51,7 @@ gem 'bcrypt', '~> 3.1', '>= 3.1.12'
 gem 'petergate', '~> 1.6', '>= 1.6.3'
 
 gem 'bootstrap', '~> 4.0'
-
+gem 'rails-ujs', '~> 5.1.0.beta1'
 gem 'jquery-rails', '~> 4.3', '>= 4.3.1'
 
 gem 'devise', '~> 4.2'

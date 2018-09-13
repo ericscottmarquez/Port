@@ -592,8 +592,9 @@ a:hover {
   text-shadow: 3px; /* Prevent inheritance from `body` */
   background-color: #fff;
   border: .15rem solid #39ff14;
-
+  top: 80px;
   transform: scale(1.5, 1.5);
+
 
 }
 
@@ -601,8 +602,17 @@ a:hover {
      color: #39ff14;
      background-color: #3f704d;
      transform: scale(2.5, 2.5);
+     top: 80px;
 }
 
+.btn-outline-success, .btn-outline-success:hover, .btn-outline-success:active, .btn-outline-success:visited {
+    background-color: #8064A2 !important;
+}
+
+
+.center-block {
+  float: none;
+}
 
 /*
  * Base structure
@@ -732,7 +742,7 @@ h3 {
 p {
     text-align: center;
     font-family: monospace;
-    line-height: 3em;
+    line-height: 1.8em;
     font-size: 1.5rem;
 }
 
@@ -745,6 +755,20 @@ p {
   opacity: 0.8;
   border: .5rem solid #39ff14;
   -webkit-animation: blink .7s step-end infinite alternate; 
+  text-align: center;
+  padding: 50px;
+}
+
+
+.card-darkbg {
+  color: black;
+  text-align: left;
+  background: #c0c0c0;
+  opacity: 0.8;
+  border: .5rem solid #39ff14;
+  -webkit-animation: blink .7s step-end infinite alternate; 
+  text-align: center;
+  padding: 50px;
 }
 
 

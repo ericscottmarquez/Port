@@ -12,7 +12,7 @@ Rails.application.config.assets.paths << Rails.root.join('node_modules')
 
 Rails.application.config.assets.precompile += %w( blogs.css portfolios.scss blogs.scss portfolios.scss particles.css )
 
-Rails.application.config.assets.precompile += %w(particles.js fixedbackground.js typevideo.mp4)
+Rails.application.config.assets.precompile += %w(particles.js fixedbackground.js typevideo.mp4 scroll_arrow.js)
 Rails.application.config.assets.precompile += %w(app.js nav.css nav.js block.js header_nav.js email.scss email.js)
 
 # application.js, application.css, and all non-JS/CSS in the app/assets

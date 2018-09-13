@@ -1,11 +1,15 @@
 
-    <header>
+
       <div class="collapse bg-dark" id="navbarHeader">
         <div class="container">
           <div class="row">
             <div class="col-sm-8 col-md-7 py-4">
               <h4 class="text-white">About</h4>
-              <p class="text-muted">Add some information about the album below, the author, or any other background context. Make it a few sentences long so folks can pick up some informative tidbits. Then, link them off to some social networking sites or contact information.</p>
+              <p class="text-muted">Add some information about the album below, the author, or any other background context. Make it a few sentences long so folks can pick up some informative tidbits. Then, link them off to some social networking sites or contact information.
+
+                <%= link_to "Create New Item", new_portfolio_path, class: "btn btn-outline-success", method: :get if logged_in?(:site_admin) %>
+
+              </p>
             </div>
             <div class="col-sm-4 offset-md-1 py-4">
               <h4 class="text-white"></h4>
@@ -30,20 +34,25 @@
           </button>
         </div>
       </div>
-    </header>
+
 
     <main role="main">
 
-        <section class="jumbotron text-center">
+       
         <div class="container">
-        <h1 class="jumbotron-heading">Recent Work Examples</h1>
+
+        <h1 class="jumbotron">Recent Work Examples
         <p class="lead text-muted"> The scope of design knows no bounds. 
         If you have an idea, we can make it happen. </p>
         <p>
         <a href="#" class="btn btn-primary my-2">Talk On The Phone</a>
         <a href="#" class="btn btn-secondary my-2">Shoot Us An Email</a>
+        
         </p>
+        </h1>
+
+
         </div>
-        </section>
+        
 
     </main>

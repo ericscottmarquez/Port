@@ -27,6 +27,7 @@
         <%= javascript_include_tag 'app.js' %>
         <%= javascript_include_tag 'particles.js' %>
         <%= javascript_include_tag 'fixedbackground.js' %>
+        <%= javascript_include_tag 'scroll_arrow.js' %>
 
         
         <%= render 'shared/application_header' %>
@@ -40,69 +41,72 @@
                 
 
 
-                    <div id="btn">
-                        <div id='top'></div>
-                        <div id='middle'></div>
-                        <div id='bottom'></div>
-                    </div>
+        <div id="btn">
+            <div id='top'></div>
+            <div id='middle'></div>
+            <div id='bottom'></div>
+        </div>
 
-                    <div id="box">
-                        <div id="items">
+        <div id="box">
+            <div id="items">
 
-                            <ul>
-                            <%= link_to "Home", root_path, class: 'list-item', method: :get %>
-                            <br>
-                            <br>
-                            <%= link_to "About", about_me_path, class: 'list-item', method: :get %>
-                            <br>
-                            <br>
-                            <%= link_to "Contact", contact_path, class: 'list-item', method: :get %>
-                            <br>
-                            <br>
-                            <%= link_to "Portfolio", portfolios_path, class: 'list-item', method: :get %>
-                            <br>
-                            <br>
-                            <%= link_to "Blob", blogs_path, class: 'list-item', method: :get %>
-                            
-                            </ul>
-                            <%= javascript_include_tag 'nav.js' %>
+                <ul>
+                <%= link_to "Home", root_path, class: 'list-item', method: :get %>
+                <br>
+                <br>
+                <%= link_to "About", about_me_path, class: 'list-item', method: :get %>
+                <br>
+                <br>
+                <%= link_to "Contact", contact_path, class: 'list-item', method: :get %>
+                <br>
+                <br>
+                <%= link_to "Portfolio", portfolios_path, class: 'list-item', method: :get %>
+                <br>
+                <br>
+                <%= link_to "Blob", blogs_path, class: 'list-item', method: :get %>
+                <br>
+                <%= login_helper 'nav-link' 'item' %>
+                </ul>
 
+                
+                <%= javascript_include_tag 'nav.js' %>
+
+
+            </div>
+        </div>
+
+
+
+
+
+        <div id="page-content-wrapper">
+
+            <div class="page-content">
+                <div class="container">
+                    <div class="row">
+
+                                        <p class="notice"><%= notice %></p>
+                                        <p class="alert"><%= alert %></p>
+                                        
+                        <div class="col-md-12">
+
+                                        <%= yield %>
 
                         </div>
-                    </div>
 
-
-
-
-
-                <div id="page-content-wrapper">
-
-                    <div class="page-content">
-                        <div class="container">
                             <div class="row">
-
-                                                <p class="notice"><%= notice %></p>
-                                                <p class="alert"><%= alert %></p>
-                                                
-                                <div class="col-md-12">
-
-                                                <%= yield %>
-
-                                </div>
-
-                                    <div class="row">
-                                    <div class="col-md-12">
-                                    <%= render "shared/application_footer" %>
-                                    </div>
-                                    <%= source_helper("application") %>
-                                    </div>
+                            <div class="col-md-12">
+                            <%= render "shared/application_footer" %>
                             </div>
-
-                        </div>
-
+                            <%= source_helper("application") %>
+                            </div>
                     </div>
+
                 </div>
-            
+
+            </div>
+        </div>
+    
 
 
     </body>

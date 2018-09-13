@@ -12,7 +12,7 @@
 
 <br>
 
-    <%= link_to 'New Blog', new_blog_path if logged_in?(:site_admin) %>
+    <%= link_to 'New Blog', new_blog_path, method: :get if logged_in?(:site_admin) %>
 
 
     <% if session[:source] %>
