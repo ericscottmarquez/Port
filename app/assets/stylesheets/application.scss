@@ -1,4 +1,5 @@
 @import "bootstrap";
+
 @import "font-awesome";
 
 
@@ -340,7 +341,7 @@ z-index: -10000;
 
           #items {
             position: relative;
-            top: 50%;
+            top: 30%;
             -webkit-transform: translateY(-50%);
                     transform: translateY(-50%);
           }
@@ -366,7 +367,6 @@ z-index: -10000;
             will-change: transform, opacity;
           }
 
-    
 
 
 
@@ -406,7 +406,7 @@ ul {
     transition: all .15s linear;
     box-shadow: -2em 2em 0 #e1e1e1;
 
-    
+
     &:before, 
     &:after { 
       transition: all .05s linear; 
@@ -418,7 +418,7 @@ ul {
       top: .4em;
       left: -.97em;
     }
-    
+     
     &:after {
       background: #00ff3e;
       width: 1em;
@@ -733,11 +733,11 @@ p {
     text-align: center;
     font-family: monospace;
     line-height: 3em;
-    font-size: 2rem;
+    font-size: 1.5rem;
 }
 
 
-@-webkit-keyframes blink { 50% { border-color: #ff0000; border-color: #000; }  }
+@-webkit-keyframes blink { 50% { border-color: #000; }  }
 .card {
   color: black;
   text-align: left;
@@ -766,14 +766,17 @@ hr {
 
     height: 2px;
 
-    background-color:#fff;
+    background-color:#000;
 
     margin-top: 20px;
 
     margin-bottom: 20px;
 
-    width: 75%;
+    width: 50%;
 
+    margin-left:25% !important;
+
+    margin-right:25% !important;
 }
 
 .auth-links a {

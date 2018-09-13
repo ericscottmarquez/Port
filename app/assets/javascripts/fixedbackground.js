@@ -1,10 +1,5 @@
 
 
-
-
-document.addEventListener('scroll', (evt) => {
-  // ... do stuff with evt
-
   $(window).scroll(function() {
 
     var scrolledY = $(window).scrollTop();
@@ -13,10 +8,6 @@ document.addEventListener('scroll', (evt) => {
 
   });
 
-
-}, {
-  capture: true,
-  passive: true
-}100)
-
-//make sure to keep event listeners on 100ms wait time or else it poops the bed
+//make sure to keep event listeners on 50-100ms wait time FOR ANDROID AND LAPTOP or else it poops the bed
+// AND STARTS DOING THAT NEAT SPLIT WINDOW THING. HONESTLY IT'S NOT THAT BAD.
+//THE IPHONE NEEDS NO EVENT LISTENER BEFORE THE LAST ); TO KEEP STATIC BG IMAGE. 

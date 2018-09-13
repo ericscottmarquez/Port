@@ -4,11 +4,31 @@
   --jumbotron-padding-y: 3rem;
 }
 
+.video {
+ position: fixed;
+ top: 50%; left: 50%;
+ z-index: 0;
+ min-width: 100%;
+ min-height: 100%;
+ width: auto;
+ height: auto;
+ transform: translate(-50%, -50%);
+}
+
 .jumbotron {
   padding-top: var(--jumbotron-padding-y);
   padding-bottom: var(--jumbotron-padding-y);
   margin-bottom: 0;
+  z-index: 2;
   background-color: #fff;
+  opacity: .7;
+
+}
+.card {
+  opacity: 0.95;
+}
+.collapse .bg-dark {
+  z-index: 2;
 }
 @media (min-width: 768px) {
   .jumbotron {
@@ -27,6 +47,7 @@
 
 .jumbotron .container {
   max-width: 40rem;
+
 }
 
 footer {

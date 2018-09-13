@@ -50,26 +50,23 @@
                         <div id="items">
 
                             <ul>
-                            <%= link_to "Home", root_path, class: 'list-item' %>
+                            <%= link_to "Home", root_path, class: 'list-item', method: :get %>
                             <br>
                             <br>
-                            <%= link_to "About", about_me_path, class: 'list-item' %>
+                            <%= link_to "About", about_me_path, class: 'list-item', method: :get %>
                             <br>
                             <br>
-                            <%= link_to "Contact", contact_path, class: 'list-item' %>
+                            <%= link_to "Contact", contact_path, class: 'list-item', method: :get %>
                             <br>
                             <br>
-                            <%= link_to "Portfolio", portfolios_path, class: 'list-item' %>
+                            <%= link_to "Portfolio", portfolios_path, class: 'list-item', method: :get %>
                             <br>
                             <br>
-                            <%= link_to "Blob", blogs_path, class: 'list-item' %>
+                            <%= link_to "Blob", blogs_path, class: 'list-item', method: :get %>
                             
-                            <%= javascript_include_tag 'nav.js' %>
                             </ul>
+                            <%= javascript_include_tag 'nav.js' %>
 
-                                <div class="item">Item 1</div>
-                                <div class="item">Item 2</div>
-                                <div class="item">Item 3</div>
 
                         </div>
                     </div>

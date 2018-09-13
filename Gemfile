@@ -9,12 +9,12 @@ gem 'rails', '~> 5.2.0'
 gem 'pg', '>= 0.18', '< 2.0'
 # Use Puma as the app server
 gem 'puma', '~> 3.11'
-
+gem 'font-awesome-rails'
 gem "pug-rails", "~> 3.0.0"
 #pug is for making nice looking html files kinda like haml
 gem 'webpacker'
 #webpacker allows for using react, command webpacker:install:react
-gem 'react-rails', '~> 2.4', '>= 2.4.7'
+
 #NEED REACT-RAILS TO HAVE SERVER RENDERING OR ELSE EVERYTHING SHITS THE BED
 gem 'thor', '~> 0.19.1'
 #foreman gem allows for running both webpack and rails server simultaneously, needs THOR to run
@@ -25,7 +25,6 @@ gem 'sass-rails', '~> 5.0'
 gem 'uglifier', '>= 1.3.0'
 # See https://github.com/rails/execjs#readme for more supported runtimes
 # gem 'mini_racer', platforms: :ruby
-gem 'font-awesome-rails', '~> 4.7', '>= 4.7.0.2'
 
 gem 'kaminari', '~> 1.1', '>= 1.1.1'
 # Use CoffeeScript for .coffee assets and views
@@ -41,8 +40,7 @@ gem 'jbuilder', '~> 2.5'
 gem 'sprockets'
 gem "sprockets-es6"
 
-
-gem 'turbolinks', '~> 5.2'
+gem 'turbolinks', '~> 5'
 
 # Use ActiveStorage variant
 # gem 'mini_magick', '~> 4.8'
