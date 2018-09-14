@@ -14,7 +14,8 @@ gem "pug-rails", "~> 3.0.0"
 #pug is for making nice looking html files kinda like haml
 gem 'webpacker'
 #webpacker allows for using react, command webpacker:install:react
-
+gem 'jquery-ui-rails', '~> 6.0', '>= 6.0.1'
+#jquery-ui-rails is a dependency of htmlsortable library. CHECK THIS OUT LATER FOR MAKING CRM SORTABLE ITEMS
 #NEED REACT-RAILS TO HAVE SERVER RENDERING OR ELSE EVERYTHING SHITS THE BED
 gem 'thor', '~> 0.19.1'
 #foreman gem allows for running both webpack and rails server simultaneously, needs THOR to run
