@@ -12,6 +12,10 @@ class PortfoliosController < ApplicationController
 #this lists and adjusts portfolio positions through the model definition of ascending order
   end
 
+  def sort
+  end
+  
+
   def angular
     @angular_portfolio_items = Portfolio.angular
   end

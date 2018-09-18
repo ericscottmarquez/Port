@@ -21,11 +21,14 @@ h6, .h6 {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: normal;
   color: #333;
-  padding-top: 140px;
+  padding-top: 40px;
 }
 
 
-
+.blog-header {
+  padding-top: 15vh;
+  padding-bottom: 10vh;
+}
 
 /*
  * Override Bootstrap's default container.

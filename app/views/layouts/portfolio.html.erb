@@ -18,6 +18,8 @@
     <%= stylesheet_link_tag    'portfolios', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
 
+
+
     <%= video_tag "typevideo.mp4", autoplay: :autoplay, loop: :loop, mute: :mute, class: "video" %>
 
 
@@ -42,8 +44,9 @@
     <script src="../../../../dist/js/bootstrap.min.js"></script>
     <script src="../../../../assets/js/vendor/holder.min.js"></script>
 
-
+<div class="container">
     <%= yield %>
+</div>
 
     <footer class="text-muted">
       <div class="container">
@@ -59,7 +62,7 @@
 </body>
 
 
-
+    <%= javascript_include_tag 'portfolios', 'data-turbolinks-track': 'reload' %>
 </html>
 
 

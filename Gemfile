@@ -10,14 +10,13 @@ gem 'pg', '>= 0.18', '< 2.0'
 # Use Puma as the app server
 gem 'puma', '~> 3.11'
 gem 'font-awesome-rails'
-gem "pug-rails", "~> 3.0.0"
+
 #pug is for making nice looking html files kinda like haml
 gem 'webpacker'
 #webpacker allows for using react, command webpacker:install:react
-gem 'jquery-ui-rails', '~> 6.0', '>= 6.0.1'
+
 #jquery-ui-rails is a dependency of htmlsortable library. CHECK THIS OUT LATER FOR MAKING CRM SORTABLE ITEMS
-#NEED REACT-RAILS TO HAVE SERVER RENDERING OR ELSE EVERYTHING SHITS THE BED
-gem 'thor', '~> 0.19.1'
+
 #foreman gem allows for running both webpack and rails server simultaneously, needs THOR to run
 gem 'foreman', '~> 0.82.0' 
 # Use SCSS for stylesheets
@@ -26,6 +25,7 @@ gem 'sass-rails', '~> 5.0'
 gem 'uglifier', '>= 1.3.0'
 # See https://github.com/rails/execjs#readme for more supported runtimes
 # gem 'mini_racer', platforms: :ruby
+gem 'rails-assets-tether', '>= 1.3.3', source: 'https://rails-assets.org'
 
 gem 'kaminari', '~> 1.1', '>= 1.1.1'
 # Use CoffeeScript for .coffee assets and views
@@ -39,7 +39,7 @@ gem 'jbuilder', '~> 2.5'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 gem 'sprockets'
-gem "sprockets-es6"
+gem 'sprockets-es6'
 
 gem 'turbolinks', '~> 5'
 
@@ -53,8 +53,18 @@ gem 'petergate', '~> 1.6', '>= 1.6.3'
 
 gem 'bootstrap', '~> 4.0'
 gem 'rails-ujs', '~> 5.1.0.beta1'
+
 gem 'jquery-rails', '~> 4.3', '>= 4.3.1'
 
+gem 'jquery-ui-rails'
+
+gem 'acts_as_list'
+
+
+source 'https://rails-assets.org' do
+  gem 'rails-assets-interact'
+end
+#INTERACT JS IS FOR MAKING DRAG AND DROP STUFF
 gem 'devise', '~> 4.2'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
