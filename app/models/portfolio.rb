@@ -4,8 +4,6 @@ class Portfolio < ApplicationRecord
   accepts_nested_attributes_for :technologies,
                                               reject_if: lambda { |attrs| attrs['name'].blank? }
 
-  acts_as_list scope: :portfolios
-
   include Placeholder
   validates_presence_of :title, :body, :main_image, :thumb_image
 
@@ -15,9 +13,7 @@ class Portfolio < ApplicationRecord
   end
 
 #begin drag and drop positioning for integer based position value
-  def self.by_position
-    order("position ASC")
-  end
+
 
 
   scope :ruby_on_rails_portfolio_items, -> { where(subtitle: 'Ruby on Rails') }

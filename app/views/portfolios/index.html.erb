@@ -1,19 +1,18 @@
 
 
+<% @portfolio_items.each do |portfolio| %>
 
 
-    <div id="portfolios" class="list-group">
+  <%= link_to image_tag(portfolio.thumb_image), portfolio_show_path(portfolio.id), 
+  class: "drag-drop can-drop", 
+  data: { draggable: true } %>
 
-            <% @portfolio_items.each do |portfolio| %>
+  <% end %>
 
-              <%= link_to portfolio.title, portfolio_show_path(portfolio.id), 
-              method: :get, class: "list-group-item", id: dom_id(portfolio), 
-              class: "list-group-item" %>
 
-            <% end %>
-
-    </div>
-
+<div id="portfolio-items" class="dropzone">
+<h1>portfolio items</h1>
+</div>
 
 
 

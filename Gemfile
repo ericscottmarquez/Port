@@ -54,21 +54,23 @@ gem 'petergate', '~> 1.6', '>= 1.6.3'
 gem 'bootstrap', '~> 4.0'
 gem 'rails-ujs', '~> 5.1.0.beta1'
 
+
+gem 'thor', '~> 0.19.1'
+
+gem 'method_source', '~> 0.9.0'
 gem 'jquery-rails', '~> 4.3', '>= 4.3.1'
-
-gem 'jquery-ui-rails'
-
-gem 'acts_as_list'
+gem 'json', '~> 2.1'
+gem 'jquery-ui-rails', '~> 6.0.1'
 
 
 source 'https://rails-assets.org' do
-  gem 'rails-assets-interact'
+  gem 'rails-assets-interact', '1.3.3'
 end
 #INTERACT JS IS FOR MAKING DRAG AND DROP STUFF
 gem 'devise', '~> 4.2'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
-gem 'coffee_view_tool', git: 'https://github.com/ericscottmarquez/coffee_view_tool'
+# gem 'coffee_view_tool', git: 'https://github.com/ericscottmarquez/coffee_view_tool'
 
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.1.0', require: false

@@ -26,8 +26,8 @@ h6, .h6 {
 
 
 .blog-header {
-  padding-top: 15vh;
-  padding-bottom: 10vh;
+  padding-top: 12vh;
+  padding-bottom: 4vh;
 }
 
 /*
@@ -93,19 +93,19 @@ body {
   background-color: #eee;
 }
 p {
-  margin-top: 100px;
+  margin-top: 10px;
   line-height: 45px;
 
 }
 article {
-  max-width: 430px;
+  max-width: 400px;
   margin: 100px auto;
   font: normal 18px/1.4 Georgia, serif;
   color: #444;
   margin-top: 10px;
 }
 article p {
-  margin-bottom: 18px;
+  margin-bottom: 30px;
   margin-top: 15px;
 }
 article p:first-of-type {
@@ -161,7 +161,7 @@ article:after {
 
 /* Pagination */
 .blog-pagination {
-  margin-bottom: 4rem;
+  margin-bottom: 2rem;
 }
 .blog-pagination > .btn {
   border-radius: 2rem;
@@ -173,14 +173,14 @@ article:after {
  */
 
 .blog-post {
-  margin-bottom: 4rem;
+  margin-bottom: 1rem;
 }
 .blog-post-title {
-  margin-bottom: .25rem;
+  margin-bottom: 20px;
   font-size: 1rem;
 }
 .blog-post-meta {
-  margin-bottom: 1.25rem;
+  margin-bottom: 0.5rem;
   color: #999;
 }
 

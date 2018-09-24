@@ -8,7 +8,7 @@ class PortfoliosController < ApplicationController
 
 
   def index
-    @portfolio_items = Portfolio.by_position
+    @portfolio_items = Portfolio.all
 #this lists and adjusts portfolio positions through the model definition of ascending order
   end
 

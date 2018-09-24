@@ -73,8 +73,8 @@ puts "5 skills created"
           fault with a man who chooses to enjoy a pleasure that 
           has no annoying consequences, or one who avoids a pain
            that produces no resultant pleasure?",
-    main_image: "http://via.placeholder.com/600x400",
-    thumb_image: "http://via.placeholder.com/350x200"
+    main_image: "http://via.placeholder.com/80x80",
+    thumb_image: "http://via.placeholder.com/80x80"
     )
 end
 
@@ -100,8 +100,8 @@ end
           fault with a man who chooses to enjoy a pleasure that 
           has no annoying consequences, or one who avoids a pain
            that produces no resultant pleasure?",
-    main_image: "http://via.placeholder.com/600x400",
-    thumb_image: "http://via.placeholder.com/350x200"
+    main_image: "http://via.placeholder.com/80x80",
+    thumb_image: "http://via.placeholder.com/80x80"
     )
 end
 
