@@ -18,6 +18,9 @@ typevideo.mp4 scroll_arrow.js
 portfolios.js 
 matrix.mp4 
 scriptstype.mp4 
+portfolios.js 
+pricing.js 
+pricing.css 
 )
 Rails.application.config.assets.precompile += %w(app.js nav.css nav.js block.js header_nav.js email.scss email.js)
 

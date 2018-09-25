@@ -17,5 +17,9 @@ class PagesController < ApplicationController
     #email layout is using webpacker for react js components
   end
 
+  def pricing
+    render :layout => false 
+  end
+  
 
 end
