@@ -13,7 +13,8 @@ Rails.application.routes.draw do
   
   get 'about-me', to: 'pages#about'
   get 'contact', to: 'pages#contact'
-  get 'pricing', to: 'pages#pricing'
+  get 'pricing', to: 'pages#pricing', as: 'pricing'
+  get 'roi', to: 'pages#roi', as: 'roi'
   get 'angular-items', to: 'portfolios#angular'
 
 

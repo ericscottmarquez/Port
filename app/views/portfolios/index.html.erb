@@ -1,19 +1,22 @@
 
 
-<% @portfolio_items.each do |portfolio| %>
+<div class="row justify-content-center">
+
+  <% @portfolio_items.each do |portfolio| %>
 
 
-  <%= link_to image_tag(portfolio.thumb_image), portfolio_show_path(portfolio.id), 
-  class: "drag-drop can-drop", 
-  data: { draggable: true } %>
+    <%= link_to image_tag(portfolio.thumb_image), portfolio_show_path(portfolio.id), 
+    class: "card", 
+    data: { draggable: true } %>
 
-  <% end %>
+    <% end %>
 
 
-<div id="portfolio-items" class="dropzone">
-<h1>portfolio items</h1>
+  <div id="portfolio-items" class="dropzone">
+  <h1>portfolio items</h1>
+  </div>
+
 </div>
-
 
 
 

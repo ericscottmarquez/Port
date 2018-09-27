@@ -99,7 +99,7 @@ z-index: -10000;
   font-weight: 500;
   color: #fff;
   font-family: monospace;
-  padding-left: 0px;
+  padding-left: 120px;
 }
 
 
@@ -139,6 +139,15 @@ z-index: -10000;
   color: #fff;
 }
 
+.btn btn-outline-info {
+  font-color: white;
+}
+
+.navbar-right {
+  float: right;
+  position: right;
+}
+
 /* ____________________convincing scroll down arrow_________________________________ */
 
 
@@ -149,7 +158,7 @@ z-index: -10000;
   color: #39ff14;
   text-align: center;
   
-  bottom: 95vh;
+  bottom: 105vh;
   display: block;
   left: 50%;
   margin-left: -50px;
@@ -689,8 +698,12 @@ a:hover {
 }
 
 .btn-outline-success, .btn-outline-success:hover, .btn-outline-success:active, .btn-outline-success:visited {
-    background-color: #8064A2 !important;
-}
+    font-size: 1.7em;
+    outline-color: #fff;
+    color: #fff !important;
+    float: right;
+  }
+
 
 
 .center-block {
@@ -814,7 +827,8 @@ h2 {
     color: #fff;
     text-align: center;
     font-family: monospace;
-    line-height: 3em;
+    line-height: 2em;
+    font-size: 2.1rem;
 
 }
 
@@ -822,8 +836,8 @@ h3 {
     color: #fff;
     text-align: center;
     font-family: monospace;
-    line-height: 3em;
-    font-size: 1.5rem;
+    line-height: 1.5em;
+    font-size: 1.7rem;
 }
 
 p {
@@ -831,6 +845,14 @@ p {
     font-family: monospace;
     line-height: 1.8em;
     font-size: 1.5rem;
+}
+
+p-small {
+    color: #fff;
+    text-align: center;
+    font-family: monospace;
+    line-height: .8em;
+    font-size: .5rem;
 }
 
 

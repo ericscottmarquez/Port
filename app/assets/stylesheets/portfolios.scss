@@ -68,7 +68,15 @@
 
 
 .card {
-  opacity: 0.95;
+  color: black;
+  text-align: left;
+  background: #fff;
+  opacity: 0.7;
+  border: .2rem solid #39ff14;
+  -webkit-animation: blink .7s step-end infinite alternate; 
+  text-align: center;
+  padding: 50px;
+  width: 300px;
 }
 .collapse .bg-dark {
   z-index: 2;

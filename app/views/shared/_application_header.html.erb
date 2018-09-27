@@ -11,9 +11,32 @@
 
                     <div class="navbar-header">
 
-                      <a class="navbar-brand" href="#"> Nexus <br/>Creative Technology Group</a>
+                      <a class="navbar-brand" href="#"> Nexus <br/>Creative Technologies </a>
 
                     </div>
+
+                      <div class="navbar-right ml-auto">
+
+                      <%= link_to "Packages", pricing_path, class: 'navbar-right btn btn-outline-success', method: :get %>
+
+                      </div>
+
+
+                      <div class="navbar-right ml-auto">
+                      <%= link_to "Profitability Scaling", roi_path, class: 'navbar-right btn btn-outline-success', method: :get %>
+                      </div>
+
+                      <div class="navbar-right ml-auto">
+                      <%= link_to "Contact", contact_path, class: 'navbar-right btn btn-outline-success', method: :get %>
+                      </div>
+
+                      <div class="navbar-right ml-auto">
+                      <p-small>*This site uses multiple
+                                <br/>
+                                layouts to showcase 
+                                <br/>
+                                design elements</p-small>
+                      </div>
 
                   </div>
 
@@ -25,4 +48,6 @@
                 <%= javascript_include_tag 'scroll_arrow.js' %>
                 <%= javascript_include_tag 'header_nav.js' %>
                 <%= javascript_include_tag 'block.js' %>
+
+
 

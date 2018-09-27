@@ -4217,7 +4217,7 @@ tbody.collapse.show {
   display: flex;
   -ms-flex-direction: column;
   flex-direction: column;
-  min-width: 0;
+  min-width: 340px;
   word-wrap: break-word;
   background-color: #fff;
   background-clip: border-box;
@@ -4343,7 +4343,7 @@ tbody.collapse.show {
   margin-bottom: 0.75rem;
 }
 
-@media (min-width: 576px) {
+@media (min-width: 777px) {
   .card-deck {
         width: 100%;
     -ms-flex-flow: row wrap;
@@ -4373,9 +4373,9 @@ tbody.collapse.show {
   margin-bottom: 0.75rem;
 }
 
-@media (min-width: 576px) {
+@media (min-width: 777px) {
   .card-group {
-    -ms-flex-flow: row wrap;
+    -ms-flex-flow: row ;
     flex-flow: row wrap;
   }
   .card-group > .card {
@@ -4439,7 +4439,7 @@ tbody.collapse.show {
   margin-bottom: .5rem;
 }
 
-@media (min-width: 576px) {
+@media (min-width: 777px) {
   .card-columns {
     -webkit-column-count: 1;
     -moz-column-count: 1;
@@ -12399,7 +12399,7 @@ a.icon:hover {
 }
 
 .btn-sm, .btn-group-sm > .btn {
-  font-size: 0.75rem;
+  font-size: 1rem;
   min-width: 1.625rem;
 }
 
