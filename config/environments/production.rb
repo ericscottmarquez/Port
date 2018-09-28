@@ -1,6 +1,5 @@
 Rails.application.configure do
   # Verifies that versions and hashed value of the package contents in the project's package.json
-  config.webpacker.check_yarn_integrity = false
   # Verifies that versions and hashed value of the package contents in the project's package.json
 
   # Settings specified here will take precedence over those in config/application.rb.
@@ -33,6 +32,7 @@ Rails.application.configure do
   # Do not fallback to assets pipeline if a precompiled asset is missed.
   config.assets.compile = false
 
+  config.assets.initialize_on_precompile = false
   # `config.assets.precompile` and `config.assets.version` have moved to config/initializers/assets.rb
 
   # Enable serving of images, stylesheets, and JavaScripts from an asset server.

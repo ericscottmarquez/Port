@@ -21,6 +21,7 @@ Bundler.require(*Rails.groups)
 
 
 
+
 module Drc
   class Application < Rails::Application
     # Initialize configuration defaults for originally generated Rails version.
@@ -31,7 +32,6 @@ module Drc
     # the framework and any gems in your application.
     # Don't generate system test files.
     config.generators.system_tests = nil
-    config.assets.initialize_on_precompile = false
-    
+
   end
 end
