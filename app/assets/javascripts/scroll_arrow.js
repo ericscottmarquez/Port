@@ -16,6 +16,6 @@ $(window).scroll(function() {
 
 
 
- }50);
+ });
 
 
