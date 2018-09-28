@@ -12,7 +12,6 @@ gem 'puma', '~> 3.11'
 gem 'font-awesome-rails'
 
 #pug is for making nice looking html files kinda like haml
-gem 'webpacker'
 #webpacker allows for using react, command webpacker:install:react
 
 #jquery-ui-rails is a dependency of htmlsortable library. CHECK THIS OUT LATER FOR MAKING CRM SORTABLE ITEMS
