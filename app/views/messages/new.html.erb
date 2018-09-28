@@ -1,0 +1,87 @@
+
+
+
+  <div class="card-darkbg">
+
+  <h2>What do you need?</h2>
+  <%= form_for @message, class: 'form', url: create_message_url do |f| %>
+  <label>
+    <%= notice %>
+  </label>
+
+    <%= @message.errors.full_messages.join(', ') %>
+
+  <label>
+    <%= f.text_field :name, placeholder: '' %>
+    <div class="label-text">Name</div>
+  </label>
+
+  <label>
+    <%= f.text_field :phone, placeholder: '' %>
+    <div class="label-text">Phone</div>
+  </label>
+
+  <label>
+    <%= f.email_field :email, placeholder: '' %>
+    <div class="label-text">Email</div>
+  </label>
+
+  <label>
+    <%= f.text_field :body, placeholder: ''  %>
+    <div class="label-text">What you need</div>
+  </label>
+
+    <%= f.submit 'Send', class: 'btn btn-outline-info' %>
+
+  <% end %>
+
+<br>
+<br>
+<br>
+    <div class="row justify-content-center">
+      <div class="col-md-6">
+
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d216856.41317039504!2d-106.647923522168!3d31.869110151764946!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86e73f8bc5fe3b69%3A0xe39184e3ab9d0222!2sEl+Paso%2C+TX!5e0!3m2!1sen!2sus!4v1534647500057" width="400" height="420" frameborder="0" style="border:0" allowfullscreen></iframe>
+
+      </div>
+    </div>
+
+  </div>
+
+
+
+
+
+
+
+
+<!--
+
+<br>
+
+        <form>
+          <h2>What do you need?</h2>
+          <label>
+            <input type="text" required />
+            <div class="label-text">name</div>
+          </label>
+
+          <label>
+            <input type="text" required />
+            <div class="label-text">phone #</div>
+          </label>
+
+            <label>
+            <input type="text" required />
+            <div class="label-text">What You Need</div>
+          </label>
+
+          <label>
+            <input type="text" required />
+            <div class="label-text">A short message</div>
+          </label>
+
+          <button>Submit</button>
+</form>
+
+-->

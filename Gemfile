@@ -16,7 +16,7 @@ gem 'webpacker'
 #webpacker allows for using react, command webpacker:install:react
 
 #jquery-ui-rails is a dependency of htmlsortable library. CHECK THIS OUT LATER FOR MAKING CRM SORTABLE ITEMS
-
+gem 'simple_form'
 #foreman gem allows for running both webpack and rails server simultaneously, needs THOR to run
 gem 'foreman', '~> 0.82.0' 
 # Use SCSS for stylesheets
@@ -62,6 +62,8 @@ gem 'jquery-rails', '~> 4.3', '>= 4.3.1'
 gem 'json', '~> 2.1'
 gem 'jquery-ui-rails', '~> 6.0.1'
 
+
+gem 'mail_form'
 
 source 'https://rails-assets.org' do
   gem 'rails-assets-interact', '1.3.3'

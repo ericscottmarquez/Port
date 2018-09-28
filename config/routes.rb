@@ -1,5 +1,11 @@
 Rails.application.routes.draw do
 
+  get 'contacts/new'
+  get 'contacts/create'
+  get 'contact/new'
+  get 'contact/create'
+  get 'contact_form/new'
+  get 'contact_form/create'
   devise_for :users, path: '', path_names: { sign_in: 'login', sign_out: 'logout', sign_up: 'register' }
 
   resources :portfolios, except: [:show]
@@ -18,7 +24,11 @@ Rails.application.routes.draw do
   get 'angular-items', to: 'portfolios#angular'
 
 
-  
+
+get 'contact-me', to: 'messages#new', as: 'new_message'
+post 'contact-me', to: 'messages#create', as: 'create_message'
+
+
   resources :blogs do
     member do
       get :toggle_status

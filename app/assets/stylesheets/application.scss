@@ -698,10 +698,10 @@ a:hover {
 }
 
 .btn-outline-success, .btn-outline-success:hover, .btn-outline-success:active, .btn-outline-success:visited {
-    font-size: 1.7em;
+    font-size: 1.2em;
     outline-color: #fff;
     color: #fff !important;
-    float: right;
+    float: auto;
   }
 
 
@@ -851,8 +851,8 @@ p-small {
     color: #fff;
     text-align: center;
     font-family: monospace;
-    line-height: .8em;
-    font-size: .5rem;
+    line-height: .4em;
+    font-size: .7rem;
 }
 
 
@@ -876,7 +876,6 @@ p-small {
   background: #000;
   opacity: 0.9;
   border: .5rem solid #39ff14;
-  -webkit-animation: blink .75s step-end infinite alternate; 
   text-align: center;
   padding: 50px;
 }
