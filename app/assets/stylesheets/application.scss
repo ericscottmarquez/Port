@@ -527,7 +527,7 @@ ul {
       .block {
         height:200px;
         width:200px;
-        opacity: 0.7;
+        opacity: 0.8;
         color:#000;
         border-top:1px solid rgba(255,255,255,0.1);
         border-bottom:1px solid rgba(0,0,0,0.1);
@@ -554,9 +554,9 @@ ul {
           padding:40px;
           line-height:normal;
           background: #644cad;
-          background: -moz-linear-gradient(left, #000 -20%, #fff 80%);
-          background: -webkit-linear-gradient(left, #000 -20%, #fff 80%);
-          background: linear-gradient(to right, #000 -20%, #fff 80%);
+          background: -moz-linear-gradient(left, #fff -20%, #fff 80%);
+          background: -webkit-linear-gradient(left, #fff -20%, #fff 80%);
+          background: linear-gradient(to right, #fff -20%, #fff 80%);
           .smallblockcontent {
             display:none;
           }
@@ -885,6 +885,7 @@ p-small-green {
   background: #000;
   opacity: 0.9;
   border: .5rem solid #39ff14;
+  -webkit-animation: blink .8s step-end infinite alternate; 
   text-align: center;
   padding: 50px;
 }
