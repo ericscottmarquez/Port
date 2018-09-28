@@ -65,6 +65,8 @@ gem 'jquery-ui-rails', '~> 6.0.1'
 
 gem 'mail_form'
 
+gem 'tel_to_helper'
+
 source 'https://rails-assets.org' do
   gem 'rails-assets-interact', '1.3.3'
 end

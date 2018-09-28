@@ -218,6 +218,8 @@ GEM
       actionpack (>= 4.0)
       activesupport (>= 4.0)
       sprockets (>= 3.0.0)
+    tel_to_helper (0.1.0)
+      rails
     thor (0.19.4)
     thread_safe (0.3.6)
     tilt (2.0.8)
@@ -278,6 +280,7 @@ DEPENDENCIES
   spring-watcher-listen (~> 2.0.0)
   sprockets
   sprockets-es6
+  tel_to_helper
   thor (~> 0.19.1)
   turbolinks (~> 5)
   tzinfo-data

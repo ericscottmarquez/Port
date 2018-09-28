@@ -44,8 +44,10 @@
         <h1 class="jumbotron">Recent Work Examples
         <p class="lead text-muted"> Built from scratch, just like Grandma's home-made apple pie </p>
         <p>
-        <a href="#" class="btn btn-primary my-2">Talk On The Phone</a>
-        <a href="#" class="btn btn-secondary my-2">Shoot Us An Email</a>
+<%= tel_to 'Press & hold to call', '915-471-1866', class: 'navbar-right btn btn-outline-success' %>
+<%= link_to "Contact", new_message_path, class: 'navbar-right btn btn-outline-success', method: :get %>
+
+
         
         </p>
         </h1>

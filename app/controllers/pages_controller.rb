@@ -25,5 +25,8 @@ class PagesController < ApplicationController
     #render :layout => false
   end
 
+def route_name
+  Rails.application.routes.recognize(request) { |route, _| route.name }.flatten.last.name.to_sym
+end
 
 end

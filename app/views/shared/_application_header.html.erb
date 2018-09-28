@@ -1,53 +1,64 @@
 
 
-            <nav class="navbar navbar-fixed-top navbar--color--primary navbar--size--xl" data-startColor="navbar--color--primary" data-startSize="navbar--size--xl" data-intoColor="navbar--color--ghost" data-intoSize="navbar--size--md">
+<nav class="navbar navbar-fixed-top navbar--color--primary navbar--size--xl" data-startColor="navbar--color--primary" data-startSize="navbar--size--xl" data-intoColor="navbar--color--ghost" data-intoSize="navbar--size--md">
 
 
-                  <div class="container justify-content-center">
+      <div class="container justify-content-center">
 
-                    <a class="d" href="#">
-                      <div class="a" href="#"></div>
-                    </a>
+        <a class="d" href="#">
+          <div class="a" href="#"></div>
+        </a>
 
-                    <div class="navbar-header">
+        <div class="navbar-header">
 
-                      <a class="navbar-brand" href="#"> Nexus <br/>Creative Technologies </a>
+          <%= link_to "Nexus Creative Technologies", root_path, class: 'navbar-brand', method: :get %>
 
-                    </div>
+        </div>
 
-                      <div class="navbar-right ml-auto">
+          <div class="navbar-right ml-auto">
+            <% if flash[:notice] -%>
+              <div class = "alert alert-success"><%= flash[:notice] %></div>
+            <% end %>
+          </div>
 
-                      <%= link_to "Packages", pricing_path, class: 'navbar-right btn btn-outline-success', method: :get %>
+          <div class="navbar-right ml-auto" style="padding-left: 80px;">
 
-                      </div>
+          <%= link_to "Packages", pricing_path, class: 'navbar-right btn btn-outline-success', method: :get %>
 
-
-                      <div class="navbar-right ml-auto">
-                      <%= link_to "Profitability Scaling", roi_path, class: 'navbar-right btn btn-outline-success', method: :get %>
-                      </div>
-
-                      <div class="navbar-right ml-auto">
-                      <%= link_to "Contact", new_message_path, class: 'navbar-right btn btn-outline-success', method: :get %>
-                      </div>
-
-                      <div class="navbar-right ml-auto">
-                      <p-small>*This site uses multiple
-                                <br/>
-                                layouts to showcase 
-                                <br/>
-                                design elements</p-small>
-                      </div>
-
-                  </div>
-
-            </nav>
+          </div>
 
 
-                <div class="hero"> </div>
+          <div class="navbar-right ml-auto">
+          <%= link_to "Profitability Scaling", roi_path, class: 'navbar-right btn btn-outline-success', method: :get %>
+          </div>
 
-                <%= javascript_include_tag 'scroll_arrow.js' %>
-                <%= javascript_include_tag 'header_nav.js' %>
-                <%= javascript_include_tag 'block.js' %>
+          <div class="navbar-right ml-auto">
+          <%= link_to "Contact", new_message_path, class: 'navbar-right btn btn-outline-success', method: :get %>
+          </div>
+
+          <div class="navbar-right ml-auto">
+          <p-small>*This site uses multiple
+                    <br/>
+                    layouts to showcase 
+                    <br/>
+                    design elements
+                    <br/></p-small>
+          </div>
+
+          <div class="navbar-right ml-auto">
+          <p-small-green><%= "*You are here: " + request.original_url %></p-small-green>
+          </div>
+
+      </div>
+
+</nav>
+
+
+    <div class="hero"> </div>
+
+    <%= javascript_include_tag 'scroll_arrow.js' %>
+    <%= javascript_include_tag 'header_nav.js' %>
+    <%= javascript_include_tag 'block.js' %>
 
 
 

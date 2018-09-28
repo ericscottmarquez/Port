@@ -1,24 +1,15 @@
 
 
-<div class="row justify-content-center">
+<div class="album py-5 bg-light">
+  <div class="container">
+    <div class="row">
 
-  <% @portfolio_items.each do |portfolio| %>
+          <%= link_to "Create New Item", new_portfolio_path if logged_in?(:site_admin) %>
 
+          <%= render partial: 'portfolio_item', collection: @portfolio_items %>
 
-    <%= link_to image_tag(portfolio.thumb_image), portfolio_show_path(portfolio.id), 
-    class: "card", 
-    data: { draggable: true } %>
-
-    <% end %>
-
-
-  <div id="portfolio-items" class="dropzone">
-  <h1>portfolio items</h1>
+    </div>
   </div>
-
 </div>
-
-
-
 
          <!-- <#%= render partial: 'portfolio_item', collection: @portfolio_items %> -->

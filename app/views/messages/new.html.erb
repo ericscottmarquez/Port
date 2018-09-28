@@ -1,15 +1,18 @@
 
 
+<body>
+
+  <%= javascript_include_tag 'autoscroll' %>
+
 
   <div class="card-darkbg">
 
   <h2>What do you need?</h2>
   <%= form_for @message, class: 'form', url: create_message_url do |f| %>
-  <label>
-    <%= notice %>
-  </label>
 
-    <%= @message.errors.full_messages.join(', ') %>
+<% if flash[:notice] -%>
+  <div class = "alert alert-success"><%= flash[:notice] %></div>
+<% end %>
 
   <label>
     <%= f.text_field :name, placeholder: '' %>
@@ -31,11 +34,27 @@
     <div class="label-text">What you need</div>
   </label>
 
+
     <%= f.submit 'Send', class: 'btn btn-outline-info' %>
 
   <% end %>
 
+<div class="row justify-content-center">
 <br>
+    <button class="btn btn-outline-success">
+      <a href="tel:9152419291" "call me">
+        <p>
+        <br>
+        <br>
+        Press & hold to talk on the phone
+        <br/>
+        915-241-9291
+        <br>
+        <br>
+        </p>
+      </a>
+    </button>
+</div>
 <br>
 <br>
     <div class="row justify-content-center">
@@ -51,8 +70,7 @@
 
 
 
-
-
+  </body>
 
 
 <!--
