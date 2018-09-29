@@ -14,7 +14,7 @@ Rails.application.configure do
 
   config.assets.compile = true
 
-
+  
   # Show full error reports.
   config.consider_all_requests_local = true
 

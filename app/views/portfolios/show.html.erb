@@ -1,38 +1,54 @@
 
 
 
-    <div class="container">
-        
-      <div class="row justify-content-center">
-            <div class="card ">
-                <div class="col-md-7">
-                    <%= image_tag @portfolio_item.main_image %>
-                </div>
+<div class="container">
 
-                <div class="col-md-5">
-                        <h1> <%= @portfolio_item.title %> </h1>
-                        <hr>
-
-                    <em><%= @portfolio_item.subtitle %> </em>
-
-                    <p><%= @portfolio_item.body %> </p>
-
-                    <hr>
-
-                    <h3> Technology Used: </h3>
-
-                    <% @portfolio_item.technologies.each do |t| %>
-                    <p> <%= t.name %> </p>
-
-                    <% end %>
-
-                    <hr>
-                    <%= link_to 'back to all', portfolios_path, class: 'btn btn-outline-info', method: :get %>
-                </div>
-
-              </div>
+<div class="row justify-content-center">
+    <div class="card ">
+        <div class="col-md-7">
+            <%= image_tag @portfolio_item.main_image, style:"height: 400px; width:800px;" %>
         </div>
-    </div>
+
+        <div class="col-md-5">
+                <h1> <%= @portfolio_item.title %> </h1>
+                <hr>
+
+            <em><%= @portfolio_item.subtitle %> </em>
+
+            <p><%= @portfolio_item.body %> </p>
+
+            <hr>
+
+            <h3> Technology Used: </h3>
+            <% @portfolio_item.technologies.each do |t| %>
+            <p-small> <%= t.name %> </p-small>
+            <% end %>
+            <hr>
+            <%= link_to "Instagram Clone", "https://ancient-inlet-27925.herokuapp.com/",
+             class: 'btn btn-outline-info', method: :get %>
+<br>
+<br>
+            <%= link_to "Real Estate Site Example", "https://ancient-inlet-27925.herokuapp.com/",
+             class: 'btn btn-outline-info', method: :get %>
+<br>
+<br>
+            <%= link_to "Application Dashboard Example", "https://ancient-inlet-27925.herokuapp.com/",
+             class: 'btn btn-outline-info', method: :get %>
+<br>
+<br>
+            <%= link_to "Listings Template", "https://ancient-inlet-27925.herokuapp.com/",
+             class: 'btn btn-outline-info', method: :get %>
+<br>
+<br>
+
+
+            <hr>
+            <%= link_to 'back to all', portfolios_path, class: 'btn btn-outline-info', method: :get %>
+        </div>
+
+      </div>
+</div>
+</div>
 
 
 
