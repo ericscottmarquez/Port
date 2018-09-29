@@ -1,15 +1,26 @@
 <!doctype html>
-<html lang="en" dir="ltr">
-  <head>
+      
 
+    <html lang="en" dir="ltr">
+    <head>
 
+    <meta charset="utf-8">
+        
+    <meta name="viewport" content="width=device-width, initial-scale=2.5, maximum-scale=2.0, minimum-scale=0.5, shrink-to-fit=yes">
 
     <%= stylesheet_link_tag    'pricing', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'app.js' %>
+    <%= stylesheet_link_tag    'particles', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'particles.js' %>
+    <%= javascript_include_tag 'application.js' %>
 
 
   </head>
-
 <br>
+
+<body>
+
+<div id="particles-js"></div>
 
 <div class="row justify-content-center">
 </div>
@@ -18,11 +29,11 @@
 
 
 <div class="row justify-content-center">
-<%= link_to root_path do %>
-<i class="btn btn-sm btn-outline-primary" >What About Return On Investment?</i>
-<% end %>
+<%= link_to "What about return on investment?", blogs_path, class: 
+'btn btn-sm btn-outline-primary', method: :get %>
 </div>
 
+<div class="row justify-content-center">
 
         <div class="col-md-12">
           <div class="container-fluid">
@@ -34,9 +45,9 @@
 
 
 
-            <div class="row justify-content-center">
+          
 
-<div class="card-deck">
+            <div class="card-deck">
 
               <div class="col-4">
                 <div class="card">
@@ -106,36 +117,34 @@
                   </div>
                 </div>
               </div>
+
             </div>
           </div>
         </div>
       </div>
-
+    </div>
 </div>
 
 
 <div class="row justify-content-center">
-<%= link_to root_path do %>
-<i class="btn btn-sm btn-outline-primary" >Not Ready Yet?</i>
-<% end %>
+<%= link_to "Not Ready?", root_path, class: 
+'btn btn-sm btn-outline-primary', method: :get %>
 </div>
 
 <br>
 
 <div class="row justify-content-center">
-
-<%= link_to root_path do %>
-<i class="btn btn-sm btn-outline-primary" >What About Return On Investment?</i>
-<% end %>
+<%= link_to "What about return on investment?", blogs_path, class: 
+'btn btn-sm btn-outline-primary', method: :get %>
 </div>
 
 <br>
 
 <div class="row justify-content-center">
 <br>
-    <i class="btn btn-sm btn-outline-primary">
-      <a href="tel:9152419291" "call me">
-      </a>
+    <i href="tel:9152419291" "call me" class="btn btn-sm btn-outline-primary">
+      <a ></a>
+      
         <br>
         <br>
         Press & hold to talk on the phone
@@ -180,11 +189,11 @@
                 </div>
               </div>
             </div>
-
-
           </div>
         </div>
       </div>
+
+
       <footer class="footer">
         <div class="container">
           <div class="row align-items-center flex-row-reverse">

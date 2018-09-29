@@ -77,7 +77,7 @@ puts "5 skills created"
 
 1.times do |portfolio_item|
   Portfolio.create!(
-    title: "Instagram Clone #{portfolio_item}",
+    title: "Instagram Clone",
     subtitle: "Angular",
     body: "But I must explain to you how all this mistaken idea of 
     enouncing pleasure and praising pain was born and I will
@@ -104,7 +104,7 @@ end
 
 1.times do |portfolio_item|
   Portfolio.create!(
-    title: "Real Estate Site Example #{portfolio_item}",
+    title: "Real Estate Site Example",
     subtitle: "Ruby on Rails",
     body: "But I must explain to you how all this mistaken idea of 
     enouncing pleasure and praising pain was born and I will
@@ -131,7 +131,7 @@ end
 
 1.times do |portfolio_item|
   Portfolio.create!(
-    title: "Dashboard Example #{portfolio_item}",
+    title: "Dashboard Example",
     subtitle: "Angular",
     body: "But I must explain to you how all this mistaken idea of 
     enouncing pleasure and praising pain was born and I will
@@ -158,7 +158,7 @@ end
 
 1.times do |portfolio_item|
   Portfolio.create!(
-    title: "Listings Template #{portfolio_item}",
+    title: "Listings Template",
     subtitle: "Angular",
     body: "But I must explain to you how all this mistaken idea of 
     enouncing pleasure and praising pain was born and I will

@@ -1,6 +1,27 @@
 @import "bootstrap";
 
+
+
+@-ms-viewport{
+  width: device-width;
+  overflow: none;
+    width: extend-to-zoom 980px;
+    min-zoom: 0.25;
+    max-zoom: 5;
+}
+
+#particles-js {
+   width: 100vw;
+   height: 100vh;
+   z-index: -1;
+   color: green;
+   position: fixed;
+ }
+
+
+
 .card {
+  opacity: 0.75;
   width: 100%;
   position: relative;
   display: -ms-flexbox;
@@ -133,7 +154,7 @@
   margin-bottom: 0.75rem;
 }
 
-@media (min-width: 777px) {
+@media (min-width: 900px) {
   .card-deck {
         width: 100%;
     -ms-flex-flow: row wrap;
@@ -163,7 +184,7 @@
   margin-bottom: 0.75rem;
 }
 
-@media (min-width: 777px) {
+@media (min-width: 900px) {
   .card-group {
     -ms-flex-flow: row ;
     flex-flow: row wrap;
@@ -229,7 +250,7 @@
   margin-bottom: .5rem;
 }
 
-@media (min-width: 777px) {
+@media (min-width: 900px) {
   .card-columns {
     -webkit-column-count: 1;
     -moz-column-count: 1;
@@ -243,3 +264,4 @@
     width: 100%;
   }
 }
+
