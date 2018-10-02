@@ -736,6 +736,8 @@ h1 {
 
 
 h2 {
+    padding-top: 60px;
+    padding-bottom: 100px;
     color: #fff;
     text-align: center;
     font-family: monospace;
@@ -743,22 +745,18 @@ h2 {
     font-size: 2.1rem;
 }
 
-
-
-
-
 h3 {
     color: #fff;
     text-align: center;
     font-family: monospace;
     line-height: 1.5em;
-    font-size: 1.7rem;
+    font-size: 3rem;
 }
 
 p {
     text-align: center;
     font-family: monospace;
-    line-height: 1.8em;
+    line-height: 3em;
     font-size: 1.5rem;
 }
 
@@ -766,7 +764,7 @@ p-small {
     color: #fff;
     text-align: center;
     font-family: monospace;
-    line-height: .3em;
+    line-height: 1em;
     font-size: 1rem;
 }
 
@@ -774,7 +772,7 @@ p-small-green {
     color: #39ff14;
     text-align: center;
     font-family: monospace;
-    line-height: .3em;
+    line-height: 2em;
     font-size: 1rem;
 }
 
@@ -794,22 +792,36 @@ p-small-green {
 
 
 .card-darkbg {
+  margin-top: -11vh;
   color: black;
   text-align: left;
   background: #000;
   opacity: 0;
   border: .5rem solid #39ff14;
-  -webkit-animation: blink .8s step-end infinite alternate; 
+  -webkit-animation: blink .777s step-end infinite alternate; 
   text-align: center;
-  padding: 50px;
-  transform: translateY(40px);
-  transition: all 1s ease-out;
+  transform: translateY(60px);
+  transition: all 0.5s ease-in;
+}
+.card-darkbg.fade-in {
+  opacity: 0.8;
+  transform: translateY(0);
 }
 
-.card-darkbg.fade-in {
+
+.servicetitle {
+  padding-top: 10vh;
+  padding-bottom: 8vh;
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.5s ease-in;
+}
+
+.servicetitle.fade-in {
   opacity: 1;
   transform: translateY(0);
 }
+
 
 
 .card-block {

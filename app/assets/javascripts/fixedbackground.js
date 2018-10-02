@@ -2,12 +2,12 @@
 
 
 // $(window).scroll(function() {
-$(document).ready ( function(){
-    var scrolledY = $(window).scrollTop();
+//$(document).ready ( function(){
+//    var scrolledY = $(window).scrollTop();
 
-    $('body').css('background-position', 'left ' + ((scrolledY)) + 'px');
+//    $('body').css('background-position', 'left ' + ((scrolledY)) + 'px');
 
-  }, false);
+//  }, false);
 
 //make sure to keep event listeners on 50-100ms wait time FOR ANDROID 
 //AND LAPTOP or else it poops the bed
