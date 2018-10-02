@@ -494,96 +494,6 @@ ul {
 
 /* __________________________________________________________________________ */
 
-/* ___________________________EXPANDING BLOCK_________________________________ */
-
-
-      *::before,
-      *::after {
-        -webkit-box-sizing: border-box;
-        -moz-box-sizing: border-box;
-        box-sizing: border-box;
-      }
-
-      @keyframes fadein {
-        from { opacity: 0; }
-        to   { opacity: 1; }
-      }
-      @-moz-keyframes fadein {
-        from { opacity: 0; }
-        to   { opacity: 1; }
-      }
-      @-webkit-keyframes fadein {
-        from { opacity: 0; }
-        to   { opacity: 1; }
-      }
-
-      .flex {
-        min-height:100vh;
-        display:flex;
-        align-items:center;
-        justify-content:center;
-      }
-
-      .block {
-        height:200px;
-        width:200px;
-        opacity: 0.8;
-        color:#000;
-        border-top:1px solid rgba(255,255,255,0.1);
-        border-bottom:1px solid rgba(0,0,0,0.1);
-        text-align:center;
-        vertical-align: middle;
-        line-height: 200px;
-        font-size:18px;
-        text-shadow: .5px .5px #000;
-        font-family: monospace;
-        position:relative;
-        background-color:#fff;
-        box-shadow: 11px 11px 3px 1px rgba(0, 0, 255, .1);
-        transition:0.3s all ease;
-        .smallblockcontent {
-          opacity:0;
-          -webkit-animation: fadein 3s forwards;
-          animation: fadein 2s forwards;
-          animation-delay:0.5s;
-        }
-        &.expanded {
-          transition:0.4s all ease;
-          width:900px;
-          height:500px;
-          padding:40px;
-          line-height:normal;
-          background: #644cad;
-          background: -moz-linear-gradient(left, #fff -20%, #fff 80%);
-          background: -webkit-linear-gradient(left, #fff -20%, #fff 80%);
-          background: linear-gradient(to right, #fff -20%, #fff 80%);
-          .smallblockcontent {
-            display:none;
-          }
-        }
-        .content {
-          text-align:left;
-          display:none;
-          opacity:0;
-          &.display {
-            -webkit-animation: fadein 3s forwards;
-            animation: fadein 2s forwards;
-            animation-delay:0.5s;
-            display:block;
-          }
-        }
-
-        a {
-          position:absolute;
-          top:0;
-          bottom:0;
-          left:0;
-          right:0;
-          z-index:2;
-        }
-      }
-
-
 
 
 /* __________________________FLOATING CONTACT________________________________ */
@@ -824,14 +734,18 @@ h1 {
     font-family: monospace;
 }
 
+
 h2 {
     color: #fff;
     text-align: center;
     font-family: monospace;
     line-height: 2em;
     font-size: 2.1rem;
-
 }
+
+
+
+
 
 h3 {
     color: #fff;
@@ -883,11 +797,18 @@ p-small-green {
   color: black;
   text-align: left;
   background: #000;
-  opacity: 0.9;
+  opacity: 0;
   border: .5rem solid #39ff14;
   -webkit-animation: blink .8s step-end infinite alternate; 
   text-align: center;
   padding: 50px;
+  transform: translateY(40px);
+  transition: all 1s ease-out;
+}
+
+.card-darkbg.fade-in {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 

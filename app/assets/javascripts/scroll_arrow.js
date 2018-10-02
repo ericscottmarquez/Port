@@ -12,10 +12,11 @@ $(window).scroll(function() {
       $('.d').fadeIn(110);
      }
 
-
-
-
-
  });
 
 
+$(document).ready(function() {
+    $(".d").click(function(event){
+        $('html, body').animate({scrollTop: '+=320px'}, 550);
+    });
+});

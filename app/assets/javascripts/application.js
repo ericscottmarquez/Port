@@ -13,6 +13,7 @@
 //= require bootstrap-sprockets
 //= require jquery_ujs
 //= require tether
+//= require scrollmagic.js
 //= require particles.js
 //= require rails-ujs
 //= require activestorage
