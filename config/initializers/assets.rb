@@ -20,7 +20,7 @@ matrix.mp4
 scriptstype.mp4 
 portfolios.js 
 pricing.css 
-autoscroll.js app.js nav.css nav.js block.js header_nav.js email.scss email.js 
+autoscroll.js app.js nav.css nav.js header_nav.js email.scss email.js 
 blogs.css portfolios.scss blogs.scss portfolios.scss particles.css 
 scrollmagic.js 
 mainscroll.js 

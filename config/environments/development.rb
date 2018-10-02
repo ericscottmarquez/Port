@@ -14,7 +14,8 @@ Rails.application.configure do
 
   config.assets.compile = true
 
-  
+  config.assets.js_compressor = Uglifier.new(harmony: true)
+
   # Show full error reports.
   config.consider_all_requests_local = true
 
