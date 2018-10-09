@@ -2,6 +2,24 @@
 <div class="row justify-content-center">
   <div class="col-md-12">
 
+<!-- Event snippet for Email conversion page
+In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
+<script>
+function gtag_report_conversion(url) {
+  var callback = function () {
+    if (typeof(url) != 'undefined') {
+      window.location = url;
+    }
+  };
+  gtag('event', 'conversion', {
+      'send_to': 'AW-785838054/RdhBCOPv-4oBEObf2_YC',
+      'event_callback': callback
+  });
+  return false;
+}
+
+</script>
+
   <div id="card-darkbg" class="card-darkbg">
 
   <h2>What do you need?</h2>
@@ -32,10 +50,10 @@
   </label>
 
 
-    <%= f.submit 'Send', class: 'btn btn-outline-info' %>
+    <%= f.submit 'Send', class: 'btn btn-outline-info', :onclick => "gtag_report_conversion()" %>
 
   <% end %>
-  
+
 <br>
 <br>
 <div class="row justify-content-center">
