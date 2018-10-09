@@ -17,6 +17,6 @@ $(window).scroll(function() {
 
 $(document).ready(function() {
     $(".d").click(function(event){
-        $('html, body').animate({scrollTop: '+=280px'}, 500);
+        $('html, body').animate({scrollTop: '+=330px'}, 500);
     });
 });

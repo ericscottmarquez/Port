@@ -84,8 +84,8 @@ puts "5 skills created"
     body: "Instagram is a leading platform for individual entertainment and business alike.
     view a clone of instagram's image upload and design here: 
     https://ancient-inlet-27925.herokuapp.com/ ",
-    main_image: "https://i.postimg.cc/PJVYc111/instagramclone.png",
-    thumb_image: "https://i.postimg.cc/PJVYc111/instagramclone.png"
+    main_image: "https://i.postimg.cc/sgjYBwrF/instagramclone.png",
+    thumb_image: "https://i.postimg.cc/sgjYBwrF/instagramclone.png"
     )
 end
 
