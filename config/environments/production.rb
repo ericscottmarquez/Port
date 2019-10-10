@@ -71,7 +71,7 @@ Rails.application.configure do
 
   config.action_mailer.perform_caching = false
 
-config.action_mailer.default_url_options = { :host => 'www.nexustechnologies.solutions' }
+config.action_mailer.default_url_options = { :host => 'www.coffeetechnologies.io' }
 
   ActionMailer::Base.smtp_settings = {
 
