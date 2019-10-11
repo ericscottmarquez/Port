@@ -31,6 +31,7 @@ module Drc
     # -- all .rb files in that directory are automatically loaded after loading
     # the framework and any gems in your application.
     # Don't generate system test files.
+    config.secret_key_base = ENV["SECRET_KEY_BASE"]
     config.generators.system_tests = nil
 
   end
