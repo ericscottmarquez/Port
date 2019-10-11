@@ -58,17 +58,32 @@ z-index: -10000;
 
 
 .hero {
-  position: relative;
-  height: 110vh;
+  justify-content: center;
+  // position: relative;
+  height: 50vh;
   z-index: -11;
-  background: url("/assets/daisy.jpeg") center no-repeat;
+  background: url("/assets/coffee2.png") center no-repeat;
   opacity: 1;
 
-     -webkit-mask-image:-webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,.7)), to(rgba(0,0,0,0)));
-      mask-image: linear-gradient(to bottom, rgba(0,0,0,.7), rgba(0,0,0,0));
-
+  // background-size: cover;
+  margin-bottom: 60vh;
 }
 
+.image-cropper {
+  justify-content: center;
+  width: 400px;
+  height: 400px;
+  overflow: hidden;
+  border-radius: 50%;
+  margin-bottom: 40vh;
+}
+
+.heroWrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+}
 
 /* ===================================== */
 /* ===== THE INTERESTING STUFF NOW ===== */
