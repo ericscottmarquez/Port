@@ -46,6 +46,7 @@ background-size: 100vmax 100vmax;
 -moz-background-size: 100vmax 100vmax;
 -o-background-size: 100vmax 100vmax;
 
+  // background-size: cover;
 
 z-index: -10000;
 
@@ -65,7 +66,6 @@ z-index: -10000;
   background: url("/assets/coffee2.png") center no-repeat;
   opacity: 1;
 
-  // background-size: cover;
   margin-bottom: 60vh;
 }
 
