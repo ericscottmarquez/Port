@@ -30,7 +30,7 @@ body, html {
 
 body {
 
-background: url("/assets/grass.jpeg") no-repeat top center fixed;
+background: url("/assets/artBlur.jpg") no-repeat top center fixed;
 
 
 background-position: left top;
@@ -40,11 +40,11 @@ background-repeat: no-repeat;
 background-attachment: fixed;
 
 
-background-size: 100vmax 100vmax;
+// background-size: 100vmax 100vmax;
 
--webkit-background-size: 100vmax 100vmax;
--moz-background-size: 100vmax 100vmax;
--o-background-size: 100vmax 100vmax;
+// -webkit-background-size: 100vmax 100vmax;
+// -moz-background-size: 100vmax 100vmax;
+// -o-background-size: 100vmax 100vmax;
 
 
 z-index: -10000;
@@ -79,6 +79,7 @@ z-index: -10000;
 }
 
 .heroWrapper {
+  padding-top: 100vh;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -116,7 +117,8 @@ z-index: -10000;
 
 
 .navbar--size--xl {
-  padding: 70vh 0;
+  padding-top: 40vh;
+  padding: 70vh;
 }
 .navbar--size--lg {
   padding: 2rem 0;
