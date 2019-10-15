@@ -24,16 +24,14 @@
             <% end %>
           </div>
 
-          <div class="navbar-right ml-auto" style="padding-left: 80px;">
-
+          <%# <div class="navbar-right ml-auto" style="padding-left: 80px;">
           <%= link_to "Packages", pricing_path, class: 'navbar-right btn btn-outline-success', method: :get %>
+          </div> %>
 
-          </div>
 
-
-          <div class="navbar-right ml-auto">
+          <%# <div class="navbar-right ml-auto">
           <%= link_to "Profitability Scaling", blogs_path, class: 'navbar-right btn btn-outline-success', method: :get %>
-          </div>
+          </div> %>
 
           <div class="navbar-right ml-auto">
           <%= link_to "Contact", new_message_path, class: 'navbar-right btn btn-outline-success', method: :get %>
@@ -54,9 +52,9 @@
 </nav>
 
   <div class="heroWrapper">
-    <div class="image-cropper">
+    <%# <div class="image-cropper">
       <div class="hero"> </div>
-    </div>
+    </div> %>
   </div>
 
     <%= javascript_include_tag 'scroll_arrow.js' %>
