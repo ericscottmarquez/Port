@@ -28,57 +28,50 @@ function gtag_report_conversion(url) {
   });
   return false;
 }
-
 </script>
 
   <div id="card-darkbg" class="card-darkbg">
-
   <h2>What do you need?</h2>
+
   <%= form_for @message, class: 'form', url: create_message_url do |f| %>
 
-<% if flash[:notice] -%>
-  <div class = "alert alert-success"><%= flash[:notice] %></div>
-<% end %>
+    <% if flash[:notice] -%>
+      <div class = "alert alert-success"><%= flash[:notice] %></div>
+    <% end %>
 
-  <label>
-    <%= f.text_field :name, placeholder: '' %>
-    <div class="label-text">Name</div>
-  </label>
+      <label>
+        <%= f.text_field :name, placeholder: '' %>
+        <div class="label-text">Name</div>
+      </label>
 
-  <label>
-    <%= f.text_field :phone, placeholder: '' %>
-    <div class="label-text">Phone</div>
-  </label>
+      <label>
+        <%= f.text_field :phone, placeholder: '' %>
+        <div class="label-text">Phone</div>
+      </label>
 
-  <label>
-    <%= f.email_field :email, placeholder: '' %>
-    <div class="label-text">Email</div>
-  </label>
+      <label>
+        <%= f.email_field :email, placeholder: '' %>
+        <div class="label-text">Email</div>
+      </label>
 
-  <label>
-    <%= f.text_field :body, placeholder: ''  %>
-    <div class="label-text">What you need</div>
-  </label>
-
+      <label>
+        <%= f.text_field :body, placeholder: ''  %>
+        <div class="label-text">What you need</div>
+      </label>
 
     <%= f.submit 'Send', class: 'btn btn-outline-info', :onclick => "gtag_report_conversion()" %>
-
   <% end %>
 
 <br>
-<br>
 <div class="row justify-content-center">
-<br>
     <button class="btn btn-outline-success">
       <a href="tel:9152419291" "call me">
         <p>
-        <br>
-        <br>
-        Press & hold to talk on the phone
-        <br/>
-        915-241-1648
-        <br>
-        <br>
+          <br>
+            Press & hold to talk on the phone
+          <br/>
+            915-241-1648
+          <br>
         </p>
       </a>
     </button>

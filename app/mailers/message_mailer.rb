@@ -12,6 +12,6 @@ class MessageMailer < ApplicationMailer
     @email = message.email
     @name = message.name
 
-    mail to: "admin@nexustechnologies.solutions", from: "LEAD INQUIRY admin@nexustechnologies.solutions", subject: @name
+    mail to: "admin@coffeetechnologies.io", from: "LEAD INQUIRY", subject: @name
   end
 end

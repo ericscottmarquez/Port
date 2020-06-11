@@ -30,7 +30,7 @@ body, html {
 
 body {
 
-background: url("/assets/artBlur.jpg") no-repeat top center fixed;
+background: url("/assets/sunsetyellow.jpg") no-repeat top center fixed;
 
 
 background-position: left top;
@@ -786,12 +786,20 @@ p-small {
     font-size: 1rem;
 }
 
+p-medium-green {
+  color: #dbe4d9;
+  text-align: center;
+  font-family: monospace;
+  line-height: 2em;
+  font-size: 1rem;
+}
+
 p-small-green {
     color: #39ff14;
     text-align: center;
     font-family: monospace;
     line-height: 2em;
-    font-size: 1rem;
+    font-size: 0.5rem;
 }
 
 

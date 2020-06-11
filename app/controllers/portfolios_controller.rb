@@ -44,8 +44,6 @@ class PortfoliosController < ApplicationController
   end
 
   def update
-
-
       respond_to do |format|
         if @portfolio_item.update(portfolio_params)
           format.html { redirect_to portfolios_path, notice: 'record was successfully updated.' }
@@ -63,8 +61,6 @@ class PortfoliosController < ApplicationController
 
   def destroy
     # perform the lookup
-
-
     # destroy the record
     @portfolio_item.destroy
     #redirect to the path and get out of there

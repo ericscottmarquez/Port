@@ -1,6 +1,5 @@
 class PagesController < ApplicationController
 
-
   def home
     @posts = Blog.all
     @skills = Skill.all
@@ -10,7 +9,7 @@ class PagesController < ApplicationController
   end
 
   def contact
-  end  
+  end
 
   def email
     render :layout => false
@@ -25,8 +24,8 @@ class PagesController < ApplicationController
     #render :layout => false
   end
 
-def route_name
-  Rails.application.routes.recognize(request) { |route, _| route.name }.flatten.last.name.to_sym
-end
+  def route_name
+    Rails.application.routes.recognize(request) { |route, _| route.name }.flatten.last.name.to_sym
+  end
 
 end
